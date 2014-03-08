@@ -1,11 +1,10 @@
-# Data-Storage
+# Data Store
 
-The Data-Storage is a cloud based storage system.
-Every game has its own Data-Storage to store all kinds of information in.
+A Cloud-based Data Storage storage system.
 
-The Data-Storage is split into Global and User storages. The Global storage can be accessed from every user, while the user-specific storage can only be accessed by the very specific user.
+It is completely up to you what you use this for - the more inventive the better!
 
-**Some things developers have achieved with the Data-Storage system:**
+__Some things developers have achieved with the Data-Storage system:__
 
 - Global Game Statistics
 - User-Specific Statistics
@@ -14,6 +13,4 @@ The Data-Storage is split into Global and User storages. The Global storage can 
 - Turn Based Strategy Games
 - Instant Replay System
 
-**Note:**
-
-The Data-Storage is limited to 16MB per key.
+__Note:__ The Data-Storage is limited to `16MB` per key.
