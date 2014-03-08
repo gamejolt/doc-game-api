@@ -70,16 +70,16 @@ http://gamejolt.com/api/game/v1/trophies/?game_id=32&username=CROS&user_token=12
 
 The API can return information currently in the following formats:
 
-> **keypair (default)**
+> __keypair (default)__
 > Returns data with each key/value on a new line. This is a simple data format to use if you can't parse XML or JSON data. This is the default format if none is passed in.
 
-> **xml**
+> __xml__
 > Returns information as XML.
 
-> **json**
+> __json__
 > Returns data as a JSON string.
 
-> **dump**
+> __dump__
 > This is a special data format used for certain URL paths to return a chunk of single data.
 
 To set which format to use in the response, you add a "format" query value and assign it the format you'd like. For example, the below request would return a listing of games in JSON.
