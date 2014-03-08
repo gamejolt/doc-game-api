@@ -5,7 +5,7 @@ Every game has its own Data-Storage to store all kinds of information in.
 
 The Data-Storage is split into Global and User storages. The Global storage can be accessed from every user, while the user-specific storage can only be accessed by the very specific user.
 
-**Some things developers have achieved with the Data-Storage system:**
+__Some things developers have achieved with the Data-Storage system:__
 
 - Global Game Statistics
 - User-Specific Statistics
@@ -14,6 +14,6 @@ The Data-Storage is split into Global and User storages. The Global storage can 
 - Turn Based Strategy Games
 - Instant Replay System
 
-**Note:**
+__Note:__
 
 The Data-Storage is limited to 16MB per key.
