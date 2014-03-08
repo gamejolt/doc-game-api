@@ -5,7 +5,7 @@ Outputs a user's data.
 ## URL Endpoint
 
 ```
-http://gamejolt.com/api/game/v1/users/
+/users/
 ```
 
 ## Parameters
@@ -21,7 +21,7 @@ _You must enter either a user ID or a username to fetch the user. You don't need
 To fetch multiple users you can pass multiple user_ids as a comma separated list. For example:
 
 ```
-http://gamejolt.com/api/game/v1/users/?game_id=1&user_id=1,2,3,4
+/users/?game_id=1&user_id=1,2,3,4
 ```
 
 ## Returns
