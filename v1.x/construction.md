@@ -77,9 +77,9 @@ http://gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_token=
 ## Batch requests
 
 If you want to send in more than one request at the same time, you need to batch your requests into one URL.
-Because the URL sent in can become quite big, the entire requests get send via POST data.
+Because the URL sent in can become quite big, the entire requests get send via POST data. If the URL is not too long though, you can send it via GET request as well.
 
-For more information on the batch request, visit the [batch information page](batch/index.md).
+For more information on the batch request, visit the [batch information page](batch/batch.md).
 
 ### Main URL construction
 
