@@ -1,6 +1,6 @@
 # Scores - Tables
 
-[GameJolt API](../../index.md) > [Scores](index.md) > __Tables__
+[GameJolt API](../index.md) > [Scores](index.md) > __Tables__
 
 ## Description
 

@@ -1,6 +1,6 @@
 # Formats - keypair
 
-[GameJolt API](../../index.md) > [Formats](index.md) > __keypair__
+[GameJolt API](../index.md) > [Formats](index.md) > __keypair__
 
 _If no format is passed in, this is the default one used._
 

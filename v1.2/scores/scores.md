@@ -1,6 +1,6 @@
 # Scores - Fetch
 
-[GameJolt API](../../index.md) > [Scores](index.md) > __Fetch__
+[GameJolt API](../index.md) > [Scores](index.md) > __Fetch__
 
 ## Description
 

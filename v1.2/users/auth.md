@@ -1,6 +1,6 @@
 # Users - Auth
 
-[GameJolt API](../../index.md) > [Users](index.md) > __Auth__
+[GameJolt API](../index.md) > [Users](index.md) > __Auth__
 
 ## Description
 

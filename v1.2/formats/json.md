@@ -1,6 +1,6 @@
 # Formats - JSON
 
-[GameJolt API](../../index.md) > [Formats](index.md) > __JSON__
+[GameJolt API](../index.md) > [Formats](index.md) > __JSON__
 
 ## Description
 

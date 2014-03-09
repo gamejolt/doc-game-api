@@ -1,6 +1,6 @@
 # Scores - Add
 
-[GameJolt API](../../index.md) > [Scores](index.md) > __Add__
+[GameJolt API](../index.md) > [Scores](index.md) > __Add__
 
 ## Description
 
