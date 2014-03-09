@@ -10,12 +10,12 @@ These are the features the API supports right now:
 
 Namespace										| Description
 ---												| ---
-[Data-store](data-store/index.md)				| Manipulate items in a cloud-based data storage.
-[Get Time](get-time/index.md)					| Get the server's time.
-[Scores](scores/index.md)						| Manipulate scores in score tables.
-[Sessions](sessions/index.md)					| Setup sessions for your game.
-[Trophies](trophies/index.md)					| Manage trophies for your game.
-[Users](users/index.md)							| Access user-based features.
+[__Data-store__](data-store/index.md)				| Manipulate items in a cloud-based data storage.
+[__Get Time__](get-time/index.md)					| Get the server's time.
+[__Scores__](scores/index.md)						| Manipulate scores in score tables.
+[__Sessions__](sessions/index.md)					| Setup sessions for your game.
+[__Trophies__](trophies/index.md)					| Manage trophies for your game.
+[__Users__](users/index.md)							| Access user-based features.
 
 ## Constructing Requests
 
@@ -84,4 +84,5 @@ http://gamejolt.com/api/game/v1/trophies/?game_id=32&username=CROS&user_token=12
 ## Multiple Formats
 
 Requests can be sent in four different formats.
-Check the [Formats](/formats/index.md) for more.
+
+Check the [Formats](/formats/index.md) page for more.
