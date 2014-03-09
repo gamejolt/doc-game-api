@@ -49,6 +49,20 @@ Sets data in the `data store`.
 >
 > The user's token.
 
+#### restriction_username
+> Type: `string`
+>
+> Required: No
+>
+> The user's username.
+
+#### restriction_user_token
+> Type: `string`
+>
+> Required: No
+>
+> The user's token.
+
 ## Returns
 
 #### success
@@ -70,6 +84,7 @@ _These values get returned if the request was not successful:_
 ## Remarks
 
 - If you pass in the user information, this item will be removed from a user's data store. If you leave the user information empty, it will be removed from the game's global data store.
+- If you don't pass in `username` and `user_token`, you can use the `restriction_username` and `restriction_user_token` parameters to restrict writing permissions of this storage item to only that user.
 - You can create new data store items by passing a `key` that doesn't exist in the data store yet.
 
 ## Syntax
@@ -77,6 +92,7 @@ _These values get returned if the request was not successful:_
 ```
 /data-store/set/?game_id=xxxxx&key=mykey&data=newdata
 /data-store/set/?game_id=xxxxx&key=mykey&data=newdata&username=myusername&user_token=mytoken
+/data-store/set/?game_id=xxxxx&key=mykey&data=newdata&restriction_username=myusername&restriction_user_token=mytoken
 ```
 
 ## Version history
