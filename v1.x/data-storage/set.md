@@ -99,4 +99,5 @@ _These values get returned if the request was not successful:_
 
 Version		 | Description
 ---			 | ---
+1.2			 | Added restriction feature.
 1.0			 | First implementation
