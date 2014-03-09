@@ -1,6 +1,6 @@
 # Users - Get
 
-[GameJolt API](../../index.md) > [Users](index.md) > __Get__
+[GameJolt API](../index.md) > [Users](index.md) > __Get__
 
 ## Description
 

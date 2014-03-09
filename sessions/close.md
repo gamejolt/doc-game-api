@@ -1,6 +1,6 @@
 # Sessions - Close
 
-[GameJolt API](../../index.md) > [Sessions](index.md) > __Close__
+[GameJolt API](../index.md) > [Sessions](index.md) > __Close__
 
 ## Description
 

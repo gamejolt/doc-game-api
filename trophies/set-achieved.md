@@ -1,6 +1,6 @@
 # Trophies - Set Achieved
 
-[GameJolt API](../../index.md) > [Trophies](index.md) > __Set Achieved__
+[GameJolt API](../index.md) > [Trophies](index.md) > __Set Achieved__
 
 ## Description
 

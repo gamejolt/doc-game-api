@@ -1,6 +1,6 @@
 # Sessions - Open
 
-[GameJolt API](../../index.md) > [Sessions](index.md) > __Open__
+[GameJolt API](../index.md) > [Sessions](index.md) > __Open__
 
 ## Description
 

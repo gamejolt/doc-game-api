@@ -1,6 +1,6 @@
 # Data Store - Get Keys
 
-[GameJolt API](../../index.md) > [Data store](index.md) > __Get keys__
+[GameJolt API](../index.md) > [Data store](index.md) > __Get keys__
 
 ## Description
 

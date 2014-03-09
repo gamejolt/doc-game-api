@@ -1,6 +1,6 @@
 # Sessions - Ping
 
-[GameJolt API](../../index.md) > [Sessions](index.md) > __Ping__
+[GameJolt API](../index.md) > [Sessions](index.md) > __Ping__
 
 ## Description
 

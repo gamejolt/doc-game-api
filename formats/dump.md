@@ -1,6 +1,6 @@
 # Formats - Dump
 
-[GameJolt API](../../index.md) > [Formats](index.md) > __Dump__
+[GameJolt API](../index.md) > [Formats](index.md) > __Dump__
 
 ## Description
 
