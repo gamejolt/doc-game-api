@@ -1,5 +1,7 @@
 # Data Store
 
+[GameJolt API](../index.md) > Data store
+
 ## Description
 
 A Cloud-based Data Storage storage system.
