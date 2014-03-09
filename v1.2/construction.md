@@ -85,7 +85,9 @@ When using the batch requests, you are calling the `batch` request of the API.
 
 The URL would look like this:
 
+```
 http://gamejolt.com/api/game/v1_2/batch/?game_id=32&format=json&signature=912ec803b2ce49e4a541068d495ab570
+```
 
 The main URL gets constructed the same way the single-call URL gets constructed.
 
@@ -97,7 +99,9 @@ The sub URL contains multiple single-call URLs.
 
 One URL would look similar to this:
 
+```
 &requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
+```
 
 It is constructed the same way the single-call URLs are, but with removed URL of the Game API and API version.
 
@@ -105,5 +109,25 @@ Also, it starts with `&requests[]=`
 
 Multiple single-call URLs in the same sub URL would look like this:
 
+```
 &requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
+```
 
+### Encoding
+
+All values of the sub URL, except the signature, need to be URL encoded.
+
+After the encoding of values is done, add the signature to the URL.
+
+Also, once the entire sub URL got constructed, everything after `&requests[]=` needs to be URL encoded as well.
+
+This results into a double URl encoding for the values.
+
+### Steps
+
+This is an easy step-by-step guide on how to construct the sub URL:
+
+1. Construct the normal URL (URL Endpoint and parameters) and encode every parameter
+2. Add a signature to the URL
+3. Encode the entire URL
+4. Add `&requests[]=` before the URL
