@@ -1,19 +1,26 @@
 # Formats - Dump
 
-This is a special format used when a certain function has to output a single chunk of data.
+## Description
 
-The first line says whether or not the request has succeeded. Any lines after that is the actual data (or a message on failure).
+This is a special format used when a certain function has to output a single chunk of data.
 
 ## Example
 
+### Success Example
+
+_When a request succeeds, the dump format returns `SUCCESS` and all data items._
+
 ```
 SUCCESS
-data goes here
-Blah, more data
-sdfsdf
+First data item
+Second data item
+Third data item
+...
 ```
 
-## Failure Example
+### Failure Example
+
+_When a request fails, the dump format returns `FAILURE` and the error message._
 
 ```
 FAILURE

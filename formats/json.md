@@ -1,5 +1,7 @@
 # Formats - JSON
 
+## Description
+
 Outputs data as a JSON string.
 
 ## Example

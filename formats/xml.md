@@ -1,5 +1,7 @@
 # Formats - XML
 
+## Description
+
 Outputs data as an XML string.
 
 ## Example
