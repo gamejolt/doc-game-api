@@ -18,12 +18,12 @@ If you don't use the `format` parameter for a request URL, `keypair` will be use
 >
 > ##### Valid values
 >
-> Value		 | Description
-> ---		 | ---
-> JSON		 | Returns data in the JSON format.
-> keypair	 | Returns data in the keypair format.
-> Dump		 | Returns data in the Dump format.
-> XML		 | Returns data in the XML format.
+> Value						| Description
+> ---						| ---
+> [JSON](json.md)			| Returns data in the JSON format.
+> [keypair](keypair.md)		| Returns data in the keypair format.
+> [Dump](dump.md)			| Returns data in the Dump format.
+> [XML](xml.md)				| Returns data in the XML format.
 
 ## Example
 
