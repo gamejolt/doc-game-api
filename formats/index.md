@@ -1,5 +1,7 @@
 # Formats
 
+[GameJolt API](../index.md) > __Formats__
+
 ## Overview
 
 The API can return information currently in different formats that can be defined by the developer.

@@ -1,5 +1,7 @@
 # Sessions - Open
 
+[GameJolt API](../../index.md) > [Sessions](index.md) > __Open__
+
 ## Description
 
 Opens a game session for a particular user. Allows you to tell Game Jolt that a user is playing your game. You must ping the session to keep it active and you must close it when you're done with it. 

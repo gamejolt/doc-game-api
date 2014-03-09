@@ -1,5 +1,7 @@
 # Get-Time
 
+[GameJolt API](../../index.md) > [Get Time](index.md) > __Get Time__
+
 ## Description
 
 Returns the time of the GameJolt server.

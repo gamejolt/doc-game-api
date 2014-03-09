@@ -1,5 +1,7 @@
 # Users
 
+[GameJolt API](../index.md) > __Users__
+
 ## Description
 
 Your games do not authenticate users by using their username and password combination. Instead, users are given a `token` (see token change page) which they enter in to your game to verify themselves.
@@ -20,8 +22,8 @@ Passing in the username and token can sometimes be a hindrance to the flow of yo
 
 Name							| Description
 ---								| ---
-__Auth__						| Verfies a username-token combination.
-__Fetch__						| Fetches user information.
+[__Auth__](auth.md)				| Verfies a username-token combination.
+[__Fetch__](users.md)			| Fetches user information.
 
 ## Example uses
 

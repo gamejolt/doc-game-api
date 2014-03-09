@@ -1,5 +1,7 @@
 # Users - Get
 
+[GameJolt API](../../index.md) > [Users](index.md) > __Get__
+
 ## Description
 
 Returns a user's data.

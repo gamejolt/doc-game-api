@@ -1,5 +1,7 @@
 # Formats - Dump
 
+[GameJolt API](../../index.md) > [Formats](index.md) > __Dump__
+
 ## Description
 
 This is a special format used when a certain function has to output a single chunk of data.

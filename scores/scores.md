@@ -1,5 +1,7 @@
 # Scores - Fetch
 
+[GameJolt API](../../index.md) > [Scores](index.md) > __Fetch__
+
 ## Description
 
 Returns a list of scores either for a user or globally for a game.

@@ -1,5 +1,7 @@
 # Trophies - Fetch
 
+[GameJolt API](../../index.md) > [Trophies](index.md) > __Fetch__
+
 ## Description
 
 Returns either one trophy, or multiple trophies, depending on the parameters passed in.

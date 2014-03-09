@@ -1,5 +1,7 @@
 # Sessions
 
+[GameJolt API](../index.md) > __Sessions__
+
 ## Description
 
 Sessions are used to tell Game Jolt when a user is playing a game, and what state they are in while playing (active, or idle).
@@ -13,9 +15,9 @@ Sessions are used to tell Game Jolt when a user is playing a game, and what stat
 
 Name							| Description
 ---								| ---
-__Open__						| Opens a session.
-__Ping__						| Pings a session.
-__Close__						| Closes a session.
+[__Open__](open.md)				| Opens a session.
+[__Ping__](ping.md)				| Pings a session.
+[__Close__](close.md)			| Closes a session.
 
 ## Example uses
 

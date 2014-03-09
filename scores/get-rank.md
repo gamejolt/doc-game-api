@@ -1,5 +1,7 @@
 # Scores - Get Rank
 
+[GameJolt API](../../index.md) > [Scores](index.md) > __Get Rank__
+
 ## Description
 
 Returns the rank inside a score table for a particular score.

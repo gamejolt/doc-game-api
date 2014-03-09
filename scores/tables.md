@@ -1,5 +1,7 @@
 # Scores - Tables
 
+[GameJolt API](../../index.md) > [Scores](index.md) > __Tables__
+
 ## Description
 
 Returns a list of high score tables for a game.

@@ -1,5 +1,7 @@
 # Trophies - Set Achieved
 
+[GameJolt API](../../index.md) > [Trophies](index.md) > __Set Achieved__
+
 ## Description
 
 Sets a trophy as achieved for a particular user.

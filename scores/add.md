@@ -1,5 +1,7 @@
 # Scores - Add
 
+[GameJolt API](../../index.md) > [Scores](index.md) > __Add__
+
 ## Description
 
 Adds a score for a user or guest.

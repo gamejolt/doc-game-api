@@ -1,5 +1,7 @@
 # Scores
 
+[GameJolt API](../index.md) > __Scores__
+
 ## Description
 
 Game Jolt supports multiple online high score tables per game. With this you are able to, for example, have a score board for each level in your game. Gamers battle to achieve the highest scores for your game. With multiple formatting and sorting options, the system is quite flexible.
@@ -15,10 +17,10 @@ You are able to include extra data with each score that you submit to Game Jolt.
 
 Name							| Description
 ---								| ---
-__Add__							| Adds a score.
-__Get Rank__					| Gets a rank for a specific score.
-__Fetch__						| Fetches scores from a score table.
-__Tables__						| Fetches a list of score tables.
+[__Add__](add.md)				| Adds a score.
+[__Get Rank__](get-rank.md)		| Gets a rank for a specific score.
+[__Fetch__](scores.md)			| Fetches scores from a score table.
+[__Tables__](tables.md)			| Fetches a list of score tables.
 
 ## Example uses
 

@@ -1,5 +1,7 @@
 # Formats - JSON
 
+[GameJolt API](../../index.md) > [Formats](index.md) > __JSON__
+
 ## Description
 
 Outputs data as a JSON string.

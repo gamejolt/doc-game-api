@@ -1,5 +1,7 @@
 # Sessions - Ping
 
+[GameJolt API](../../index.md) > [Sessions](index.md) > __Ping__
+
 ## Description
 
 Pings an open session to tell the system that it's still active. If the session hasn't been pinged within `120 seconds`, the system will close the session and you will have to open another one. It's recommended that you ping every `30 seconds` or so to keep the system from cleaning up your session.

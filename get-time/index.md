@@ -1,5 +1,7 @@
 # Get Time
 
+[GameJolt API](../index.md) > __Get Time__
+
 ## Description
 
 A namespace to obtain time information from the GameJolt server.
@@ -14,7 +16,7 @@ A namespace to obtain time information from the GameJolt server.
 
 Name							| Description
 ---								| ---
-__Get Time__					| Fetches the time from the GameJolt server.
+[__Get Time__](get-time.md)		| Fetches the time from the GameJolt server.
 
 ## Example uses
 

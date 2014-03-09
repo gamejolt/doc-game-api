@@ -1,5 +1,7 @@
 # Sessions - Close
 
+[GameJolt API](../../index.md) > [Sessions](index.md) > __Close__
+
 ## Description
 
 Closes the active session.

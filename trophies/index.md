@@ -1,5 +1,7 @@
 # Trophies
 
+[GameJolt API](../index.md) > __Trophies__
+
 ## Description
 
 Game Jolt allows you to add Trophies in to your games!

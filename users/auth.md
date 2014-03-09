@@ -1,5 +1,7 @@
 # Users - Auth
 
+[GameJolt API](../../index.md) > [Users](index.md) > __Auth__
+
 ## Description
 
 Authenticates the user's information. This should be done before you make any calls for the user, to make sure that the user's credentials (`username`/`token`) are valid.
