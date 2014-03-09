@@ -57,11 +57,13 @@ _These values get returned if the request was not successful:_
 
 - For more information on how to use the batch request, visit the [Construction](../construction.md) page.
 - The maximum amount of sub requests for one batch requests is 50.
+- The `parallel` and `break_on_error` parameters cannot be used in the same request.
 
 ## Syntax
 
 ```
-/batch/?game_id=xxxxx&parallel=true&break_on_error=false
+/batch/?game_id=xxxxx&parallel=true
+/batch/?game_id=xxxxx&break_on_error=true
 ```
 
 ## Version history
