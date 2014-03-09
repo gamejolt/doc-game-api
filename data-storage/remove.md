@@ -1,5 +1,7 @@
 # Data Store - Remove
 
+[GameJolt API](../../index.md) > [Data store](../index.md) > Remove
+
 ## Description
 
 Removes data from the `data store`.

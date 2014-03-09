@@ -1,5 +1,7 @@
 # Data Store - Set
 
+[GameJolt API](../../index.md) > [Data store](../index.md) > Set
+
 ## Description
 
 Sets data in the `data store`.

@@ -1,5 +1,7 @@
 # Data Store - Get Keys
 
+[GameJolt API](../../index.md) > [Data store](../index.md) > Get keys
+
 ## Description
 
 Returns all the keys in either the game's global `data store`, or all the keys in a user's `data store`.

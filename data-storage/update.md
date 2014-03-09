@@ -1,5 +1,7 @@
 # Data Store - Update
 
+[GameJolt API](../../index.md) > [Data store](../index.md) > Update
+
 ## Description
 
 Updates data in the `data store.`

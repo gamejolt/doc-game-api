@@ -1,5 +1,7 @@
 # Data Store - Fetch
 
+[GameJolt API](../../index.md) > [Data store](../index.md) > Fetch
+
 ## Description
 
 Returns data from the `Data Store`.
