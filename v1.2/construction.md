@@ -1,6 +1,6 @@
 # Constructing Requests
 
-[GameJolt API](../index.md) > __Constructing Requests__
+[GameJolt API](index.md) > __Constructing Requests__
 
 ## Single API requests
 
