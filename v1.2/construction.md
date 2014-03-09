@@ -79,6 +79,8 @@ http://gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_token=
 If you want to send in more than one request at the same time, you need to batch your requests into one URL.
 Because the URL sent in can become quite big, the entire requests get send via POST data.
 
+For more information on the batch request, visit the [batch information page](/batch/index.md).
+
 ### Main URL construction
 
 When using the batch requests, you are calling the `batch` request of the API.
@@ -127,7 +129,7 @@ This results into a double URl encoding for the values.
 
 This is an easy step-by-step guide on how to construct the sub URL:
 
-1. Construct the normal URL (URL Endpoint and parameters) and encode every parameter
+1. Construct the normal URL (URL Endpoint and parameters) and encode every value of every parameter
 2. Add a signature to the URL
 3. Encode the entire URL
 4. Add `&requests[]=` before the URL
