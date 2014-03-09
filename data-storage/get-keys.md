@@ -2,7 +2,7 @@
 
 ## Description
 
-Returns all the keys in either the game's global data store, or all the keys in a user's data store.
+Returns all the keys in either the game's global `data store`, or all the keys in a user's `data store`.
 
 ## URL Endpoint
 
@@ -45,7 +45,7 @@ Returns all the keys in either the game's global data store, or all the keys in 
 #### success
 > Type: `boolean`
 >
-> Indicates wether the call was successful.
+> Indicates wether the request was successful.
 >
 > __Example__: `true`
 
@@ -76,10 +76,10 @@ _These values get returned if the request was successful:_
 ## Syntax:
 
 ```
-/data-storage/get-keys/?game_id=xxxxx
-/data-storage/get-keys/?game_id=xxxxx&pattern=save|*
-/data-storage/get-keys/?game_id=xxxxx&username=myusername&user_token=mytoken
-/data-storage/get-keys/?game_id=xxxxx&pattern=save|*&username=myusername&user_token=mytoken
+/data-store/get-keys/?game_id=xxxxx
+/data-store/get-keys/?game_id=xxxxx&pattern=save|*
+/data-store/get-keys/?game_id=xxxxx&username=myusername&user_token=mytoken
+/data-store/get-keys/?game_id=xxxxx&pattern=save|*&username=myusername&user_token=mytoken
 ```
 
 ## Version history

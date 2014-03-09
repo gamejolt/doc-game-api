@@ -1,6 +1,8 @@
 # Data Store - Set
 
-Sets data in the `Data Store`.
+## Description
+
+Sets data in the `data store`.
 
 ## URL Endpoint
 
@@ -10,15 +12,72 @@ Sets data in the `Data Store`.
 
 ## Parameters
 
-Name         | Required? | Description
----          | ---       | ---
-`game_id`    | required  | The ID of your game.
-`key`        | required  | The key of the data item you'd like to set.
-`data`       | required  | The data you'd like to set. Note that this should be a string, but can be sent through a `POST` request.
-`username`   | optional  | The user's username.
-`user_token` | optional  | The user's token.
+#### game_id
+> Type: `string`
+>
+> Required: Yes
+>
+> The ID of your game.
 
-If you pass in the user information, this item will be set for a user. If you leave the user information empty, it will be set globally for the game.
+#### key
+> Type: `string`
+>
+> Required: Yes
+>
+> The key of the data item you'd like to set.
 
-Returns
-`success` or `failure`.
+#### data
+> Type: `string`
+>
+> Required: Yes
+>
+> The data you'd like to set. Note that this should be a string, but can be sent through a `POST` request.
+
+#### username
+> Type: `string`
+>
+> Required: No
+>
+> The user's username.
+
+#### user_token
+> Type: `string`
+>
+> Required: No
+>
+> The user's token.
+
+## Returns
+
+#### success
+> Type: `boolean`
+>
+> Indicates wether the request was successful.
+>
+> __Example__: `true`
+
+_These values get returned if the request was not successful:_
+
+#### message
+> Type: `string`
+>
+> If the request was not successful, this contains the error message.
+>
+> __Example__: `Unknown fatal error occurred.`
+
+## Remarks
+
+- If you pass in the user information, this item will be removed from a user's data store. If you leave the user information empty, it will be removed from the game's global data store.
+
+## Syntax
+
+```
+/data-store/set/?game_id=xxxxx&key=mykey&data=newdata
+/data-store/set/?game_id=xxxxx&key=mykey&data=newdata&username=myusername&user_token=mytoken
+```
+
+## Version history
+
+Version		 | Description
+---			 | ---
+1.0			 | First implementation

@@ -45,7 +45,7 @@ Returns data from the `Data Store`.
 #### success
 > Type: `boolean`
 >
-> Indicates wether the call was successful.
+> Indicates wether the request was successful.
 >
 > __Example__: `true`
 

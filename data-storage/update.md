@@ -2,7 +2,7 @@
 
 ## Description
 
-Updates data in the Data-Store.
+Updates data in the `data store.`
 
 ## URL Endpoint
 
@@ -70,7 +70,7 @@ Updates data in the Data-Store.
 #### success
 > Type: `boolean`
 >
-> Indicates wether the call was successful.
+> Indicates wether the request was successful.
 >
 > __Example__: `true`
 
@@ -100,8 +100,8 @@ _These values get returned if the request was successful:_
 ## Syntax
 
 ```
-/data-storage/update/?game_id=xxxxx&key=mykey&operation=append&value=add to string
-/data-storage/update/?game_id=xxxxx&key=mykey&operation=divide&value=2&username=myusername&user_token=mytoken
+/data-store/update/?game_id=xxxxx&key=mykey&operation=append&value=add to string
+/data-store/update/?game_id=xxxxx&key=mykey&operation=divide&value=2&username=myusername&user_token=mytoken
 ```
 
 ## Version history
