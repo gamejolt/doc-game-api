@@ -10,7 +10,7 @@ These are the features the API supports right now:
 
 Namespace										| Description
 ---												| ---
-[__Data-store__](data-store/index.md)				| Manipulate items in a cloud-based data storage.
+[__Data-store__](data-storage/index.md)				| Manipulate items in a cloud-based data storage.
 [__Get Time__](get-time/index.md)					| Get the server's time.
 [__Scores__](scores/index.md)						| Manipulate scores in score tables.
 [__Sessions__](sessions/index.md)					| Setup sessions for your game.
