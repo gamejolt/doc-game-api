@@ -29,3 +29,7 @@ This page instructs you how to construct the API requests: [Constructing Request
 Requests can be sent in four different formats.
 
 Check the [Formats](formats/index.md) page for more.
+
+## Version history
+
+These are the changes done to version 1.2 of the API: [__Version History__](version_history.md).
