@@ -19,8 +19,8 @@ You can also tag trophies on the site as "secret." This is where a trophy's imag
 
 Name							| Description
 ---								| ---
-__Fetch__						| Fetches trophies with various attributes.
-__Set Achieved__				| Sets whether a user achieved a trophy.
+[__Fetch__](trophies.md)						| Fetches trophies with various attributes.
+[__Set Achieved__](set-achieved.md)				| Sets whether a user achieved a trophy.
 
 ## Example uses
 

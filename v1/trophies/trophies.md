@@ -1,6 +1,6 @@
 # Trophies - Fetch
 
-[GameJolt API](../../index.md) > [Trophies](index.md) > __Fetch__
+[GameJolt API](../index.md) > [Trophies](index.md) > __Fetch__
 
 ## Description
 
