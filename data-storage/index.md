@@ -17,11 +17,11 @@ It is completely up to you what you use this for - the more inventive the better
 
 Name							| Description
 ---								| ---
-__[Fetch]__(/data-store.md)		| Fetches data from the data store.
-__[Get keys]__(/get-keys.md)	| Fetches keys of data items from the data store.
-__[Remove]__(/remove.md)		| Removes data items from the data store.
-__[Set]__(/set.md)				| Sets data in the data store.
-__[Update]__(/update.md)		| Updates data in the data store with various functions.
+[__Fetch__](/data-store.md)		| Fetches data from the data store.
+[__Get keys__](/get-keys.md)	| Fetches keys of data items from the data store.
+[__Remove__](/remove.md)		| Removes data items from the data store.
+[__Set__](/set.md)				| Sets data in the data store.
+[__Update__](/update.md)		| Updates data in the data store with various functions.
 
 ## Example uses
 
