@@ -1,6 +1,6 @@
 # Data Store - Set
 
-[GameJolt API](../../index.md) > [Data store](../index.md) > Set
+[GameJolt API](../../index.md) > [Data store](index.md) > __Set__
 
 ## Description
 

@@ -1,6 +1,6 @@
 # Data Store - Fetch
 
-[GameJolt API](../../index.md) > [Data store](../index.md) > Fetch
+[GameJolt API](../../index.md) > [Data store](index.md) > __Fetch__
 
 ## Description
 

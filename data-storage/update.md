@@ -1,6 +1,6 @@
 # Data Store - Update
 
-[GameJolt API](../../index.md) > [Data store](../index.md) > Update
+[GameJolt API](../../index.md) > [Data store](index.md) > __Update__
 
 ## Description
 

@@ -1,6 +1,6 @@
 # Data Store - Remove
 
-[GameJolt API](../../index.md) > [Data store](../index.md) > Remove
+[GameJolt API](../../index.md) > [Data store](index.md) > __Remove__
 
 ## Description
 

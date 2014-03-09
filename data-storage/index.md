@@ -1,6 +1,6 @@
 # Data Store
 
-[GameJolt API](../index.md) > Data store
+[GameJolt API](../index.md) > __Data store__
 
 ## Description
 
@@ -17,11 +17,11 @@ It is completely up to you what you use this for - the more inventive the better
 
 Name							| Description
 ---								| ---
-[__Fetch__](/data-storage/data-store.md) | Fetches data from the data store.
-[__Get keys__](/data-storage/get-keys.md)	| Fetches keys of data items from the data store.
-[__Remove__](/data-storage/remove.md)		| Removes data items from the data store.
-[__Set__](/data-storage/set.md)				| Sets data in the data store.
-[__Update__](/data-storage/update.md)		| Updates data in the data store with various functions.
+[__Fetch__](data-store.md)		| Fetches data from the data store.
+[__Get keys__](get-keys.md)		| Fetches keys of data items from the data store.
+[__Remove__](remove.md)			| Removes data items from the data store.
+[__Set__](set.md)				| Sets data in the data store.
+[__Update__](update.md)			| Updates data in the data store with various functions.
 
 ## Example uses
 
