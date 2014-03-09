@@ -16,6 +16,7 @@ Namespace											| Description
 [__Sessions__](sessions/index.md)					| Setup sessions for your game.
 [__Trophies__](trophies/index.md)					| Manage trophies for your game.
 [__Users__](users/index.md)							| Access user-based features.
+[__Batch__](batch/index.md)							| Merge multiple API calls into one request.
 
 ## Constructing requests
 
@@ -27,4 +28,4 @@ This page instructs you how to construct the API requests: [Constructing Request
 
 Requests can be sent in four different formats.
 
-Check the [Formats](/formats/index.md) page for more.
+Check the [Formats](formats/index.md) page for more.
