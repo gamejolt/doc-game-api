@@ -1,0 +1,19 @@
+# NAMESPACE
+
+## Description
+
+the description text
+
+## Requests
+
+Name							| Description
+---								| ---
+__(link to page)request-url__	| short description
+
+## Remarks
+
+Some notes here
+
+## Example uses (optional)
+
+- list some example uses for the requests in this namespace.
