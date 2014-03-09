@@ -1,8 +1,8 @@
 # Data Store - Fetch
 
-Returns data from the `Data Store`.
+## Description
 
-Note that we suggest using the `dump` format for returning data from this call.
+Returns data from the `Data Store`.
 
 ## URL Endpoint
 
@@ -12,17 +12,75 @@ Note that we suggest using the `dump` format for returning data from this call.
 
 ## Parameters
 
-Name         | Required? | Description
----          | ---       | ---
-`game_id`    | required  | The ID of your game.
-`key`        | required  | The key of the data item you'd like to fetch.
-`username`   | optional  | The user's username.
-`user_token` | optional  | The user's token.
+#### game_id
+> Type: `string`
+>
+> Required: Yes
+>
+> The ID of your game.
 
-If you pass in the user information, this item will be fetched for a user. If you leave the user information empty, it will be fetched globally for the game.
+#### key
+> Type: `string`
+>
+> Required: Yes
+>
+> The key of the data item you'd like to fetch.
+
+#### username
+> Type: `string`
+>
+> Required: No
+>
+> The user's username.
+
+#### user_token
+> Type: `string`
+>
+> Required: No
+>
+> The user's token.
 
 ## Returns
 
-The item's data.
+#### success
+> Type: `boolean`
+>
+> Indicates wether the call was successful.
+>
+> __Example__: `true`
 
-We suggest using the `dump` format for returning data from this call.
+_These values get returned if the request was not successful:_
+
+#### message
+> Type: `string`
+>
+> If the request was not successful, this contains the error message.
+>
+> __Example__: `Unknown fatal error occurred.`
+
+_These values get returned if the request was successful:_
+
+#### data
+> Type: `string`
+>
+> If the request was successful, this contains the item's data.
+>
+> __Example__: `some example data.`
+
+## Remarks
+
+- If you pass in the user information, this item will be fetched for a user. If you leave the user information empty, it will be fetched globally for the game.
+- We suggest using the `dump` format for returning data from this call.
+
+## Syntax
+
+```
+/data-storage/?game_id=xxxxx&key=myglobalkey
+/data-storage/?game_id=xxxxx&key=myuserkey&username=myusername&user_token=mytoken
+```
+
+## Version history
+
+Version		 | Description
+---			 | ---
+1.0			 | First implementation
