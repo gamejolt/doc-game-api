@@ -45,7 +45,7 @@ Removes data from the `data store`.
 #### success
 > Type: `boolean`
 >
-> Indicates wether the request was successful.
+> Whether the request succeeded or failed.
 >
 > __Example__: `true`
 

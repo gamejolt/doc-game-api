@@ -45,7 +45,7 @@ Returns all the keys in either the game's global `data store`, or all the keys i
 #### success
 > Type: `boolean`
 >
-> Indicates wether the request was successful.
+> Whether the request succeeded or failed.
 >
 > __Example__: `true`
 

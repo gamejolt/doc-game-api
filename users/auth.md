@@ -38,7 +38,7 @@ Authenticates the user's information. This should be done before you make any ca
 #### success
 > Type: `boolean`
 >
-> Indicates wether the request was successful.
+> Whether the request succeeded or failed.
 >
 > __Example__: `true`
 
