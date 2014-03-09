@@ -1,8 +1,23 @@
-# Getting Started
+# GameJolt API
+
+## Introduction
 
 Calls to the system are done over the HTTP protocol, so nothing special is needed, and you can even test the service using a normal Web browser.
 
-## Sending Calls
+## Namespaces
+
+These are the features the API supports right now:
+
+Namespace										| Description
+---												| ---
+[Data-store](data-store/index.md)				| Manipulate items in a cloud-based data storage.
+[Get Time](get-time/index.md)					| Get the server's time.
+[Scores](scores/index.md)						| Manipulate scores in score tables.
+[Sessions](sessions/index.md)					| Setup sessions for your game.
+[Trophies](trophies/index.md)					| Manage trophies for your game.
+[Users](users/index.md)							| Access user-based features.
+
+## Constructing Requests
 
 An example call to the API might look something like:
 
@@ -36,7 +51,7 @@ Now we have to pass in some variables. This is done as simple GET query values. 
 http://gamejolt.com/api/game/v1/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
-## Signature
+## Adding a Signature
 
 Notice the "signature" parameter in the URL call above. The signature variable is a way to verify that the URL call came from you and not someone trying to crack the system.
 
@@ -68,22 +83,5 @@ http://gamejolt.com/api/game/v1/trophies/?game_id=32&username=CROS&user_token=12
 
 ## Multiple Formats
 
-The API can return information currently in the following formats:
-
-> __keypair (default)__
-> Returns data with each key/value on a new line. This is a simple data format to use if you can't parse XML or JSON data. This is the default format if none is passed in.
-
-> __xml__
-> Returns information as XML.
-
-> __json__
-> Returns data as a JSON string.
-
-> __dump__
-> This is a special data format used for certain URL paths to return a chunk of single data.
-
-To set which format to use in the response, you add a "format" query value and assign it the format you'd like. For example, the below request would return a listing of games in JSON.
-
-```
-http://gamejolt.com/api/game/v1/?format=json
-```
+Requests can be sent in four different formats.
+Check the [Formats](/formats/index.md) for more.
