@@ -56,7 +56,7 @@ _These values get returned if the request was not successful:_
 
 ## Remarks
 
-Not all calls require the user to enter a valid user-token combination.
+- Not all calls require the user to enter a valid user-token combination.
 
 ## Syntax
 

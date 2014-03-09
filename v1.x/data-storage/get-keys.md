@@ -69,13 +69,13 @@ _These values get returned if the request was successful:_
 >
 > __Example__: `keyname`
 
-## Remarks:
+## Remarks
 
 - If you apply a pattern to the request, only keys with their keyname applying to the pattern will get returned. The placeholder char for the pattern is `*`.
 - If you pass in the user information this function will return all the keys in a user's data store. If you leave the user information empty, it will return all the keys in the game's global data store.
 - This request will return a list of the `key` value, this means the `key` return value can appear more than once.
 
-## Syntax:
+## Syntax
 
 ```
 /data-store/get-keys/?game_id=xxxxx
