@@ -1,10 +1,27 @@
 # Data Store
 
-A Cloud-based Data Storage storage system.
+## Description
 
+A Cloud-based Data Storage storage system.
 It is completely up to you what you use this for - the more inventive the better!
 
-__Some things developers have achieved with the Data-Storage system:__
+## URL Endpoint
+
+```
+/data-store/
+```
+
+## Requests
+
+Name							| Description
+---								| ---
+__Fetch__						| Fetches data from the data store.
+__Get keys__					| Fetches keys of data items from the data store.
+__Remove__						| Removes data items from the data store.
+__Set__							| Sets data in the data store.
+__Update__						| Updates data in the data store with various functions.
+
+## Example uses
 
 - Global Game Statistics
 - User-Specific Statistics
@@ -13,4 +30,12 @@ __Some things developers have achieved with the Data-Storage system:__
 - Turn Based Strategy Games
 - Instant Replay System
 
-__Note:__ The Data-Storage is limited to `16MB` per key.
+## Remarks
+
+- The Data-Storage is limited to `16MB` per key.
+
+## Version history
+
+Version		| Description
+---			| ---
+1.0			| First implementation
