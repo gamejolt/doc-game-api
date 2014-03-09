@@ -34,7 +34,7 @@ The "data-store" part is the URL path that we use to retrieve an item from the d
 http://gamejolt.com/api/game/v1_2/data-store/
 ```
 
-(look [here](/data-storage/index.md) for more information about the data store.)
+(look [here](data-storage/index.md) for more information about the data store.)
 
 
 Now we have to pass in some variables. This is done as simple GET query values. Note that you can also send the data through a POST method. The variables required for each request can be found on on their respective pages. Notice the "signature" parameter - this is required in every request to the system.
@@ -79,7 +79,7 @@ http://gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_token=
 If you want to send in more than one request at the same time, you need to batch your requests into one URL.
 Because the URL sent in can become quite big, the entire requests get send via POST data.
 
-For more information on the batch request, visit the [batch information page](/batch/index.md).
+For more information on the batch request, visit the [batch information page](batch/index.md).
 
 ### Main URL construction
 
