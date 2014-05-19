@@ -48,7 +48,7 @@ _These values get returned if the request was successful:_
 >
 > __Example__: `1394374272`
 
-#### timeszone
+#### timezone
 > Type: `string`
 >
 > The timezone the server is in.
