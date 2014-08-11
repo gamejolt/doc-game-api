@@ -17,7 +17,7 @@ Name							| Description
 ---								| ---
 [__Open__](open.md)				| Opens a session.
 [__Ping__](ping.md)				| Pings a session.
-[__Check__](checkmd)			| Checks if a session is open.
+[__Check__](check.md)			| Checks if a session is open.
 [__Close__](close.md)			| Closes a session.
 
 ## Example uses
