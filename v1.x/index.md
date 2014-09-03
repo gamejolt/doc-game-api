@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Calls to the system are done over the HTTP protocol, so nothing special is needed, and you can even test the service using a normal Web browser.
+Calls to the system are done over the HTTP, so nothing special is needed, and you can even test the service using a normal Web browser.
 
 ## Namespaces
 
