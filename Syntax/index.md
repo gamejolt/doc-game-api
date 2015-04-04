@@ -1,7 +1,5 @@
 # NAMESPACE
 
-## Description
-
 the description text
 
 ## URL Endpoint
@@ -12,9 +10,9 @@ Put the main URL endpoint for all requests here.
 
 ## Requests
 
-Name							| Description
----								| ---
-__(link to page)request-url__	| short description
+Name | Description
+--- | ---
+__[Endpoint](/api/doc/url)__ | short description
 
 ## Example uses (optional)
 
@@ -26,7 +24,7 @@ Some notes here
 
 ## Version history
 
-Version		| Description
----			| ---
-1.2			| Added more derp
-1.0			| First implementation
+Version | Description
+--- | ---
+1.2 | Added more derp
+1.0 | First implementation
