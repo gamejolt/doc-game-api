@@ -50,9 +50,9 @@ Type | Description
 
 ## Remarks
 
-- For more information on how to use the batch request, visit the [Construction](../construction.md) page.
-- The maximum amount of sub requests for one batch requests is 50.
+- The maximum amount of subrequests in one batch request is 50.
 - The `parallel` and `break_on_error` parameters cannot be used in the same request.
+- For more information on how to use the batch request, visit the [Construction](../construction.md) page.
 
 ## Syntax
 
