@@ -42,9 +42,9 @@ Type | Required? | Description
 
 #### success
 
--Type | Description
----- | ---
--`boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+Type | Description
+--- | ---
+`boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 
 #### message
 > Type: `string`
