@@ -15,11 +15,10 @@ Returns data from the `Data Store`.
 ## Parameters
 
 #### game_id
-> Type: `string`
->
-> Required: Yes
->
-> The ID of your game.
+
+Type | Required? | Description
+--- | --- | ---
+`string` | Yes | The ID of your game.
 
 #### key
 > Type: `string`
