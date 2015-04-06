@@ -17,7 +17,7 @@ The batch request enables developers to send in multiple API calls with one HTTP
 #### game_id
 
 Type | Required?
---- | --- | ---
+--- | ---
 `string` | Yes
 
 The ID of your game.
@@ -25,7 +25,7 @@ The ID of your game.
 #### parallel
 
 Type | Required?
---- | --- | ---
+--- | ---
 `boolean` | No
 
 If this is set to `true`, then all requests in the batch will be processed at the same time.
