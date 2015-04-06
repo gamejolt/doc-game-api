@@ -27,11 +27,10 @@ Type | Required? | Description
 `string` | Yes | The key of the data item you'd like to fetch.
 
 #### username
-> Type: `string`
->
-> Required: No
->
-> The user's username.
+
+Type | Required? | Description
+--- | --- | ---
+`string` | No | The user's username.
 
 #### user_token
 > Type: `string`
