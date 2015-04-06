@@ -23,11 +23,12 @@ Type | Required?
 The ID of your game.
 
 #### parallel
-> Type: `boolean`
->
-> Required: No
->
-> If this is set to `true`, then all requests in the batch will get processed at the same time.
+
+Type | Required?
+--- | --- | ---
+`boolean` | No
+
+If this is set to `true`, then all requests in the batch will be processed at the same time.
 
 #### break_on_error
 > Type: `boolean`
