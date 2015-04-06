@@ -47,13 +47,10 @@ Type | Description
 `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 
 #### message
-> Type: `string`
->
-> If the request was not successful, this contains the error message.
->
-> __Example__: `Unknown fatal error occurred.`
 
-_These values get returned if the request was successful:_
+Type | Description
+--- | ---
+`string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 #### data
 > Type: `string`
