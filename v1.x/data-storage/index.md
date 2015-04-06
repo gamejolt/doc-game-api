@@ -1,11 +1,6 @@
 # Data Store
 
-[GameJolt API](../index.md) > __Data store__
-
-## Description
-
-A Cloud-based Data Storage storage system.
-It is completely up to you what you use this for - the more inventive the better!
+A cloud-based data storage system. It's completely up to you what you use this for. The more inventive the better!
 
 ## URL Endpoint
 
@@ -25,16 +20,16 @@ Name							| Description
 
 ## Example uses
 
-- Global Game Statistics
-- User-Specific Statistics
-- Private Messaging System
-- User-Generated Content Hosting, e.g. Level Packs
-- Turn Based Strategy Games
+- Global game statistics
+- User-specific statistics
+- In-game messaging system
+- User-generated content hosting (e.g level packs)
+- Asynchronous Turn-Based Strategy Games
 - Instant Replay System
 
 ## Remarks
 
-- The Data-Storage is limited to `16MB` per key.
+- Data storage is limited to 16MB per key.
 
 ## Version history
 
