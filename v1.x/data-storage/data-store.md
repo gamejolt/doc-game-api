@@ -33,11 +33,10 @@ Type | Required? | Description
 `string` | No | The user's username.
 
 #### user_token
-> Type: `string`
->
-> Required: No
->
-> The user's token.
+
+Type | Required? | Description
+--- | --- | ---
+`string` | No | The user's token.
 
 ## Returns
 
