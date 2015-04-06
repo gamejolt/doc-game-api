@@ -16,27 +16,21 @@ The batch request enables developers to send in multiple API calls with one HTTP
 
 #### game_id
 
-Type | Required?
---- | ---
-`string` | Yes
-
-The ID of your game.
+Type | Required? | Description
+--- | --- | ---
+`string` | Yes | The ID of your game.
 
 #### parallel
 
-Type | Required?
---- | ---
-`boolean` | No
-
-If this is set to `true`, then all requests in the batch will be processed at the same time.
+Type | Required? | Description
+--- | --- | ---
+`boolean` | No | If this is set to `true`, then all requests in the batch will be processed at the same time.
 
 #### break_on_error
 
-Type | Required?
---- | ---
-`boolean` | No
-
-If this is set to `true` and any request in the batch fails, the entire process will be stopped and the batch call will return `false` in the `success` return value.
+Type | Required? | Description
+--- | --- | ---
+`boolean` | No | If this is set to `true` and any request in the batch fails, the entire process will be stopped and the batch call will return `false` in the `success` return value.
 
 ## Returns
 
