@@ -4,7 +4,7 @@
 
 ## Description
 
-The batch request is a collection request that enables developers to send in multiple API calls with one HTTP request.
+The batch request enables developers to send in multiple API calls with one HTTP request.
 
 ## URL Endpoint
 
