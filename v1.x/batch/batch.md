@@ -42,12 +42,11 @@ Type | Description
 
 _These values get returned if the request was not successful:_
 
-#### message
-> Type: `string`
->
-> If the request was not successful, this contains the error message.
->
-> __Example__: `Unknown fatal error occurred.`
+#### error message
+
+Type | Description
+--- | ---
+`string` | This contains the error message for unsuccessful requests. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Remarks
 
