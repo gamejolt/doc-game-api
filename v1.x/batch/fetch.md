@@ -1,7 +1,5 @@
 # Batch
 
-[GameJolt API](../index.md) > __Batch__
-
 A batch request is a collection of subrequests that enables developers to send multiple API calls with one HTTP request.
 
 ## URL Endpoint
