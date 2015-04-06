@@ -21,11 +21,10 @@ Type | Required? | Description
 `string` | Yes | The ID of your game.
 
 #### key
-> Type: `string`
->
-> Required: Yes
->
-> The key of the data item you'd like to fetch.
+
+Type | Required? | Description
+--- | --- | ---
+`string` | Yes | The key of the data item you'd like to fetch.
 
 #### username
 > Type: `string`
