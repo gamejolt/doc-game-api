@@ -15,11 +15,12 @@ The batch request enables developers to send in multiple API calls with one HTTP
 ## Parameters
 
 #### game_id
-> Type: `string`
->
-> Required: Yes
->
-> The ID of your game.
+
+Type | Required?
+--- | --- | ---
+`string` | Yes
+
+The ID of your game.
 
 #### parallel
 > Type: `boolean`
