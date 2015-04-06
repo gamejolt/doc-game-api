@@ -41,13 +41,10 @@ Type | Required? | Description
 ## Returns
 
 #### success
-> Type: `boolean`
->
-> Whether the request succeeded or failed.
->
-> __Example__: `true`
 
-_These values get returned if the request was not successful:_
+-Type | Description
+---- | ---
+-`boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 
 #### message
 > Type: `string`
