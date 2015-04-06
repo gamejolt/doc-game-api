@@ -31,11 +31,12 @@ Type | Required?
 If this is set to `true`, then all requests in the batch will be processed at the same time.
 
 #### break_on_error
-> Type: `boolean`
->
-> Required: No
->
-> If this is set to `true`, the entire batch call returns `false` in the `success` return value, if one sub request fails. The batch also stops the entire process and won't validate the rest of the sub requests anymore.
+
+Type | Required?
+--- | ---
+`boolean` | No
+
+If this is set to `true` and any request in the batch fails, the entire process will be stopped and the batch call will return `false` in the `success` return value.
 
 ## Returns
 
