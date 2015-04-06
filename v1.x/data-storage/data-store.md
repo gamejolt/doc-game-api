@@ -53,11 +53,10 @@ Type | Description
 `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 #### data
-> Type: `string`
->
-> If the request was successful, this contains the item's data.
->
-> __Example__: `some example data.`
+
+Type | Description
+--- | ---
+`string` | If the request was successful, this contains the item's data. <br> **Example**: `Some example data.`
 
 ## Remarks
 
