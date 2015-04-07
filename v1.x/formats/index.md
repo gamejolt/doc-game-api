@@ -12,7 +12,7 @@ Name | Required? | Type | Description
 --- | --- | --- | ---
 format | No | `string` | The format in which to return the response.
 
-### Valid Values
+### Valid `format` Values
 
 Value | Description
 --- | ---
