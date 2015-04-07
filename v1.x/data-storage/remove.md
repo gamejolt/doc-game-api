@@ -13,17 +13,8 @@ Removes data from the `data store`.
 Name | Required? | Type | Description
 --- | --- | --- | ---
 game_id | Yes | `string` | The ID of your game.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 key | Yes | `string` | The key of the data item you'd like to remove.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 username | No | `string` | The user's username.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 user_token | No | `string` | The user's token.
 
 ## Returns
@@ -31,9 +22,6 @@ user_token | No | `string` | The user's token.
 Name | Type | Description
 --- | --- | ---
 success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-
-Name | Type | Description
---- | --- | ---
 message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Remarks

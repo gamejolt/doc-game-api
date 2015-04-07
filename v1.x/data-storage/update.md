@@ -13,25 +13,10 @@ Updates data in the `data store.`
 Name | Required? | Type | Description
 --- | --- | --- | ---
 game_id | Yes | `string` | The ID of your game.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 key | Yes | `string` | The key of the data item you'd like to update.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 username | No | `string` | The user's username.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 user_token | No | `string` | The user's token.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 operation | Yes | `string` | The operation you'd like to perform.
-
-Name | Required? | Type | Description
---- | --- | --- | ---
 value | Yes | `string` or `integer` | The value you'd like to apply to the data store item. <br> (See table below.)
 
 ### Valid Values
@@ -47,16 +32,10 @@ prepend | Prepends the `value` to the current data store item.
 
 ## Returns
 
-ame | Type | Description
+Name | Type | Description
 --- | --- | ---
 success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-
-Name | Type | Description
---- | --- | ---
 message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
-
-Name | Type | Description
---- | --- | ---
 data | `string` or `integer` | If the request was successful, this returns the new value of the data item. <br> **Example**: `New data with appended string.`
 
 ## Remarks
