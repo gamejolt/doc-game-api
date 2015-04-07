@@ -1,10 +1,6 @@
 # Get Time
 
-[GameJolt API](../index.md) > __Get Time__
-
-## Description
-
-A namespace to obtain time information from the GameJolt server.
+A namespace to obtain time information from the Game Jolt server.
 
 ## URL Endpoint
 
@@ -16,14 +12,12 @@ A namespace to obtain time information from the GameJolt server.
 
 Name							| Description
 ---								| ---
-[__Get Time__](get-time.md)		| Fetches the time from the GameJolt server.
+[__Get Time__](get-time.md)		| Fetches the time from the server.
 
-## Example uses
+## Example Uses
 
-- Realize real-time gameplay for everyone playing the same game-
+- Realize real-time gameplay for everyone playing the same game
 - Security systems based on the server time
-
-## Remarks
 
 ## Version history
 
