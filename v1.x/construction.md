@@ -35,9 +35,9 @@ http://gamejolt.com/api/game/v1_2/data-store/
 (Look [here](data-storage/index.md) for more information about the data store.)
 
 
-Now we have to pass in some variables. This is done as simple GET query values. Note that you can also send the data through a POST method.
+Now we have to pass in some variables. This is done as simple GET query parameters. Note that you can also send the data through a POST method.
 
-The variables required for each request can be found on on their respective pages. Notice the "signature" parameter - this is required in every request to the system.
+The variables required for each request can be found on their respective pages. Notice the "signature" parameter - this is required in every request to the system.
 
 All variables except the signature value need to get URL encoded before passing them into the URL.
 
@@ -48,8 +48,6 @@ http://gamejolt.com/api/game/v1_2/data-store/?game_id=32&key=test&signature=912e
 ### Adding a Signature
 
 Notice the "signature" parameter in the URL call above. The signature variable is a way to verify that the URL call came from you and not someone trying to crack the system.
-
-If there isn't an API already built for your platform, you will need to know how to generate the signature.
 
 First you need to form the URL that you want to query. For example, getting trophies for your game would be:
 
