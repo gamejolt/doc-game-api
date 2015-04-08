@@ -1,9 +1,5 @@
 # Trophies - Set Achieved
 
-[GameJolt API](../index.md) > [Trophies](index.md) > __Set Achieved__
-
-## Description
-
 Sets a trophy as achieved for a particular user.
 
 ## URL Endpoint
@@ -14,53 +10,19 @@ Sets a trophy as achieved for a particular user.
 
 ## Parameters
 
-#### game_id
-> Type: `string`
->
-> Required: Yes
->
-> The ID of your game.
-
-#### username
-> Type: `string`
->
-> Required: Yes
->
-> The user's username.
-
-#### user_token
-> Type: `string`
->
-> Required: Yes
->
-> The user's token.
-
-#### trophy_id
-> Type: `integer`
->
-> Required: Yes
->
-> The ID of the trophy you'd like to add for the user.
+Name | Required? | Type | Description
+--- | --- | --- | ---
+game_id | Yes | `string` | The ID of your game.
+username | Yes | `string` | The user's username.
+user_token | Yes | `string` | The user's token.
+trophy_id | Yes | `integer` | The ID of the trophy to add for the user.
 
 ## Returns
 
-#### success
-> Type: `boolean`
->
-> Whether the request succeeded or failed.
->
-> __Example__: `true`
-
-_These values get returned if the request was not successful:_
-
-#### message
-> Type: `string`
->
-> If the request was not successful, this contains the error message.
->
-> __Example__: `Unknown fatal error occurred.`
-
-## Remarks
+Name | Type | Description
+--- | --- | ---
+success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Syntax
 

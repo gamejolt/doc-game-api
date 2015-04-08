@@ -1,10 +1,6 @@
 # Sessions - Open
 
-[GameJolt API](../index.md) > [Sessions](index.md) > __Open__
-
-## Description
-
-Opens a game session for a particular user. Allows you to tell Game Jolt that a user is playing your game. You must ping the session to keep it active and you must close it when you're done with it. 
+Opens a game session for a particular user and allows you to tell Game Jolt that a user is playing your game. You must ping the session to keep it active and you must close it when you're done with it. 
 
 ## URL Endpoint
 
@@ -14,48 +10,22 @@ Opens a game session for a particular user. Allows you to tell Game Jolt that a 
 
 ## Parameters
 
-#### game_id
-> Type: `string`
->
-> Required: Yes
->
-> The ID of your game.
-
-#### username
-> Type: `string`
->
-> Required: Yes
->
-> The user's username.
-
-#### user_token
-> Type: `string`
->
-> Required: Yes
->
-> The user's token.
+Name | Required? | Type | Description
+--- | --- | --- | ---
+game_id | Yes | `string` | The ID of your game.
+username | Yes | `string` | The user's username.
+user_token | Yes | `string` | The user's token.
 
 ## Returns
 
-#### success
-> Type: `boolean`
->
-> Whether the request succeeded or failed.
->
-> __Example__: `true`
-
-_These values get returned if the request was not successful:_
-
-#### message
-> Type: `string`
->
-> If the request was not successful, this contains the error message.
->
-> __Example__: `Unknown fatal error occurred.`
+Name | Type | Description
+--- | --- | ---
+success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Remarks
 
-- You can only have one open session at a time. If you try to open a new session while one is running, the system will close out your current one before opening a new one.
+- You can only have one open session for a user at a time. If you try to open a new session while one is running, the system will close out the current one before opening the new one.
 
 ## Syntax
 

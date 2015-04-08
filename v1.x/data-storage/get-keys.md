@@ -1,10 +1,6 @@
 # Data Store - Get Keys
 
-[GameJolt API](../index.md) > [Data store](index.md) > __Get keys__
-
-## Description
-
-Returns all the keys in either the game's global `data store`, or all the keys in a user's `data store`.
+Returns either all the keys in the game's global `data store`, or all the keys in a user's `data store`.
 
 ## URL Endpoint
 
@@ -14,66 +10,26 @@ Returns all the keys in either the game's global `data store`, or all the keys i
 
 ## Parameters
 
-#### game_id
-> Type: `string`
->
-> Required: Yes
->
-> The ID of your game.
-
-#### pattern
-> Type: `string`
->
-> Required: No
->
-> The pattern to apply to the key names in the data store.
-
-#### username
-> Type: `string`
->
-> Required: No
->
-> The user's username.
-
-#### user_token
-> Type: `string`
->
-> Required: No
->
-> The user's token.
+Name | Required? | Type | Description
+--- | --- | --- | ---
+game_id | Yes | `string` | The ID of your game.
+pattern | No | `string` | The pattern to apply to the key names in the data store.
+username | No | `string` | The user's username.
+user_token | No | `string` | The user's token.
 
 ## Returns
 
-#### success
-> Type: `boolean`
->
-> Whether the request succeeded or failed.
->
-> __Example__: `true`
-
-_These values get returned if the request was not successful:_
-
-#### message
-> Type: `string`
->
-> If the request was not successful, this contains the error message.
->
-> __Example__: `No such user could be found.`
-
-_These values get returned if the request was successful:_
-
-#### key
-> Type: `string`
->
-> The name of the key. This function will return all the keys for this particular data store.
->
-> __Example__: `keyname`
+Name | Type | Description
+--- | --- | ---
+success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `No such user could be found.`
+key | `string` | The name of the key. This function will return all the keys for this particular data store. <br> **Example**: `keyname`
 
 ## Remarks
 
-- If you apply a pattern to the request, only keys with their keyname applying to the pattern will get returned. The placeholder char for the pattern is `*`.
-- If you pass in the user information this function will return all the keys in a user's data store. If you leave the user information empty, it will return all the keys in the game's global data store.
-- This request will return a list of the `key` value, this means the `key` return value can appear more than once.
+- If you apply a pattern to the request, only keys with applicable key names will be returned. The placeholder character for patterns is `*`.
+- If you pass in the user information, this function will return all the keys in a user's data store. If you leave the user information empty, it will return all the keys in the game's global data store.
+- This request will return a list of the `key` values. The `key` return value can appear more than once.
 
 ## Syntax
 

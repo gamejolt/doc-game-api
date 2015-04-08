@@ -1,10 +1,6 @@
 # Version History
 
-[GameJolt API](index.md) > __Version History__
-
-## Description
-
-This page displays all changes done to version __1.2__.
+This page displays all changes made to version **1.2**.
 
 ## Changes
 

@@ -1,13 +1,11 @@
 # Formats - keypair
 
-[GameJolt API](../index.md) > [Formats](index.md) > __keypair__
+If no format is passed in, this is the default.
 
-_If no format is passed in, this is the default one used._
+The key is the plain text of the key.
 
-## Description
+Keys are separated from values by a colon (:).
 
-The key is the plain text of the key. The value is a double-quoted string with inside double-quotes escaped with a backslash.
-The keys are separated from the values by a colon (:).
 Each key/value pair is on a new line.
 
 ## Example

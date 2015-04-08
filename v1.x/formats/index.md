@@ -1,29 +1,25 @@
 # Formats
 
-[GameJolt API](../index.md) > __Formats__
+The API can return information in different formats that can be defined by the developer.
 
-## Overview
+To define which format to use, add a `format` parameter to the URL and set the value of the format you'd like.
 
-The API can return information currently in different formats that can be defined by the developer.
-To set which format to use in the response, you add a `format` parameter to the URL and set it to the format you'd like.
-This addition can be used on all API requests.
+This function can be added to any API requests.
+
 If you don't use the `format` parameter for a request URL, `keypair` will be used as the default format.
 
-#### format
-> Type: `string`
->
-> Required: No
->
-> The format to return the response in.
->
-> ##### Valid values
->
-> Value						| Description
-> ---						| ---
-> [JSON](json.md)			| Returns data in the JSON format.
-> [keypair](keypair.md)		| Returns data in the keypair format.
-> [Dump](dump.md)			| Returns data in the Dump format.
-> [XML](xml.md)				| Returns data in the XML format.
+Name | Required? | Type | Description
+--- | --- | --- | ---
+format | No | `string` | The format in which to return the response.
+
+### Valid `format` Values
+
+Value | Description
+--- | ---
+[JSON](json.md) | Returns data in the JSON format.
+[keypair](keypair.md) | Returns data in the keypair format.
+[Dump](dump.md) | Returns data in the Dump format.
+[XML](xml.md) | Returns data in the XML format.
 
 ## Example
 

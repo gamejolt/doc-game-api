@@ -1,9 +1,5 @@
 # Formats - XML
 
-[GameJolt API](../index.md) > [Formats](index.md) > __XML__
-
-## Description
-
 Outputs data as an XML string.
 
 ## Example

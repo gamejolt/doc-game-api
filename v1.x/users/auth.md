@@ -1,10 +1,6 @@
 # Users - Auth
 
-[GameJolt API](../index.md) > [Users](index.md) > __Auth__
-
-## Description
-
-Authenticates the user's information. This should be done before you make any calls for the user, to make sure that the user's credentials (`username`/`token`) are valid.
+Authenticates the user's information. This should be done before you make any calls for the user, to make sure the user's credentials (`username`/`token`) are valid.
 
 ## URL Endpoint
 
@@ -14,49 +10,22 @@ Authenticates the user's information. This should be done before you make any ca
 
 ## Parameters
 
-#### game_id
-> Type: `string`
->
-> Required: Yes
->
-> The ID of your game.
-
-#### username
-> Type: `string`
->
-> Required: Yes
->
-> The username of the user.
-
-#### user_token
-> Type: `string`
->
-> Required: Yes
->
-> The user's token.
+Name | Required? | Type | Description
+--- | --- | --- | ---
+game_id | Yes | `string` | The ID of your game.
+username | Yes | `string` | The user's username.
+user_token | Yes | `string` | The user's token.
 
 ## Returns
 
-#### success
-> Type: `boolean`
->
-> Whether the request succeeded or failed.
->
-> __Example__: `true`
-
-_These values get returned if the request was not successful:_
-
-#### message
-> Type: `string`
->
-> If the request was not successful, this contains the error message.
->
-> __Example__: `No such user with the credentials passed in could be found.`
-
+Name | Type | Description
+--- | --- | ---
+success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `No user could be found matching these credentials.`
 
 ## Remarks
 
-- Not all calls require the user to enter a valid user-token combination.
+- Not all calls require the user to enter a valid username-token combination.
 
 ## Syntax
 

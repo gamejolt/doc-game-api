@@ -1,16 +1,12 @@
 # Formats - Dump
 
-[GameJolt API](../index.md) > [Formats](index.md) > __Dump__
-
-## Description
-
 This is a special format used when a certain function has to output a single chunk of data.
 
-## Example
+## Examples
 
 ### Success Example
 
-_When a request succeeds, the dump format returns `SUCCESS` and all data items._
+When a request succeeds, the dump format returns `SUCCESS` and all data items.
 
 ```
 SUCCESS
@@ -22,7 +18,7 @@ Third data item
 
 ### Failure Example
 
-_When a request fails, the dump format returns `FAILURE` and the error message._
+When a request fails, the dump format returns `FAILURE` and the error message.
 
 ```
 FAILURE
