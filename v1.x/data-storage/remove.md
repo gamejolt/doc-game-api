@@ -1,6 +1,6 @@
 # Data Store - Remove
 
-Removes data from the `data store`.
+Removes data from the data store.
 
 ## URL Endpoint
 

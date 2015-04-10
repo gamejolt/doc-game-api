@@ -1,6 +1,6 @@
 # Data Store - Get Keys
 
-Returns either all the keys in the game's global `data store`, or all the keys in a user's `data store`.
+Returns either all the keys in the game's global data store, or all the keys in a user's data store.
 
 ## URL Endpoint
 

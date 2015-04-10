@@ -1,6 +1,6 @@
 # Data Store - Update
 
-Updates data in the `data store.`
+Updates data in the data store.
 
 ## URL Endpoint
 

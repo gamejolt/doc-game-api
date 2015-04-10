@@ -1,6 +1,6 @@
 # Data Store - Set
 
-Sets data in the `data store`.
+Sets data in the data store.
 
 ## URL Endpoint
 

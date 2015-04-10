@@ -1,6 +1,6 @@
 # Data Store - Fetch
 
-Returns data from the `Data Store`.
+Returns data from the data store.
 
 ## URL Endpoint
 

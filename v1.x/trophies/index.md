@@ -6,7 +6,7 @@ Trophies come in four materials: Bronze, Silver, Gold, and Platinum. This is to 
 
 On Game Jolt, trophies are always listed in order from easiest to most difficult to achieve.
 
-You can also tag trophies on the site as "secret." A sercet trophy's image and description is not visible until a gamer has achieved it.
+You can also tag trophies on the site as "secret". A sercet trophy's image and description is not visible until a gamer has achieved it.
 
 ## URL Endpoint
 

@@ -8,7 +8,7 @@ An example call to the API might look something like this:
 http://gamejolt.com/api/game/v1_2/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
-The above would return data stored in the system with the key of "test" for the game with the ID of 32.
+The above would return data stored in the system with the key of "test" for the game with the ID of "32".
 
 It may look a little daunting at first, so let's dissect it.
 
