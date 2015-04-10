@@ -10,7 +10,7 @@ If you don't use the `format` parameter for a request URL, `keypair` will be use
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-format | No | `string` | The format in which to return the response.
+`format` | No | `string` | The format in which to return the response.
 
 ### Valid `format` Values
 

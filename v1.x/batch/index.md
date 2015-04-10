@@ -14,17 +14,17 @@ Because the constructed URL can become quite lengthy, the entire request is sent
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-parallel | No | `boolean` | If this is set to `true`, then all subrequests in the batch will be processed at the same time.
-break_on_error | No | `boolean` | If this is set to `true`, one subrequest failure will cause the entire batch to stop processing subrequests and return a value of `false` for `success`.
-requests[] | Yes | `string[]` | An array of request sub-urls. Each request will be executed and the responses of each one will be returned in the payload. You must URL-encode each sub-request as well.
+`game_id` | Yes | `string` | The ID of your game.
+`parallel` | No | `boolean` | If this is set to `true`, then all subrequests in the batch will be processed at the same time.
+`break_on_error` | No | `boolean` | If this is set to `true`, one subrequest failure will cause the entire batch to stop processing subrequests and return a value of `false` for `success`.
+`requests[]` | Yes | `string[]` | An array of request sub-urls. Each request will be executed and the responses of each one will be returned in the payload. You must URL-encode each sub-request as well.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ### Main URL Construction
 

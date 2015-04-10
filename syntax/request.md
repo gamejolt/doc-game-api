@@ -12,13 +12,13 @@ URL
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-parameter_name | Yes/No | `type` | Description
+`parameter_name` | Yes/No | `type` | Description
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-field_name | `type` | Description <br> **Example**: `example text`
+`field_name` | `type` | Description <br> **Example**: `example text`
 
 ## Remarks
 

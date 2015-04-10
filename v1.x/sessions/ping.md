@@ -14,24 +14,24 @@ You can also let the system know whether the player is in an active or idle stat
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-username | Yes | `string` | The user's username.
-user_token | Yes | `string` | The user's token.
-status | No | `string` | Sets the status of the session.
+`game_id` | Yes | `string` | The ID of your game.
+`username` | Yes | `string` | The user's username.
+`user_token` | Yes | `string` | The user's token.
+`status` | No | `string` | Sets the status of the session.
 
 ### Valid Values for `value`
  
 Value | Description
 ---	| ---
-active | Sets the session to the `active` state.
-idle | Sets the session to the `idle` state.
+`active` | Sets the session to the `active` state.
+`idle` | Sets the session to the `idle` state.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Syntax
 

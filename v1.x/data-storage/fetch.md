@@ -12,18 +12,18 @@ Returns data from the data store.
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-key | Yes | `string` | The key of the data item you'd like to fetch.
-username | No | `string` | The user's username.
-user_token | No | `string` | The user's token.
+`game_id` | Yes | `string` | The ID of your game.
+`key` | Yes | `string` | The key of the data item you'd like to fetch.
+`username` | No | `string` | The user's username.
+`user_token` | No | `string` | The user's token.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
-data | `string` | If the request was successful, this contains the item's data. <br> **Example**: `Some example data.`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+`data` | `string` | If the request was successful, this contains the item's data. <br> **Example**: `Some example data.`
 
 ## Remarks
 

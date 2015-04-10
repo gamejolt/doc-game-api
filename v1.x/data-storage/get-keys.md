@@ -12,18 +12,18 @@ Returns either all the keys in the game's global data store, or all the keys in 
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-pattern | No | `string` | The pattern to apply to the key names in the data store.
-username | No | `string` | The user's username.
-user_token | No | `string` | The user's token.
+`game_id` | Yes | `string` | The ID of your game.
+`pattern` | No | `string` | The pattern to apply to the key names in the data store.
+`username` | No | `string` | The user's username.
+`user_token` | No | `string` | The user's token.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `No such user could be found.`
-key | `string` | The name of the key. This function will return all the keys for this particular data store. <br> **Example**: `keyname`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `No such user could be found.`
+`key` | `string` | The name of the key. This function will return all the keys for this particular data store. <br> **Example**: `keyname`
 
 ## Remarks
 

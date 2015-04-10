@@ -12,17 +12,17 @@ Returns the rank of a particular score on a score table.
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-sort | Yes | `integer` | This is a numerical sorting value that is represented by a rank on the score table.
-table_id | No | `integer` | The ID of the score table from which you want to get the rank.
+`game_id` | Yes | `string` | The ID of your game.
+`sort` | Yes | `integer` | This is a numerical sorting value that is represented by a rank on the score table.
+`table_id` | No | `integer` | The ID of the score table from which you want to get the rank.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
-rank | `integer` | The rank of the score on the score table. <br> **Example**: `99`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+`rank` | `integer` | The rank of the score on the score table. <br> **Example**: `99`
 
 ## Remarks
 
