@@ -1,4 +1,4 @@
-# Formats - keypair
+# Formats - Keypair
 
 If no format is passed in, this is the default.
 
