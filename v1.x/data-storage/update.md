@@ -19,7 +19,7 @@ user_token | No | `string` | The user's token.
 operation | Yes | `string` | The operation you'd like to perform.
 value | Yes | `string` or `integer` | The value you'd like to apply to the data store item. <br> (See table below.)
 
-### Valid Values
+### Valid Values for `value`
 
 Value | Description
 --- | ---

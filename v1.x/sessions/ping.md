@@ -19,7 +19,7 @@ username | Yes | `string` | The user's username.
 user_token | Yes | `string` | The user's token.
 status | No | `string` | Sets the status of the session.
 
-### Valid Values
+### Valid Values for `value`
  
 Value | Description
 ---	| ---
