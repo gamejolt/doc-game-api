@@ -1,6 +1,6 @@
 # Data Store - Remove
 
-Removes data from the `data store`.
+Removes data from the data store.
 
 ## URL Endpoint
 
@@ -12,17 +12,17 @@ Removes data from the `data store`.
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-key | Yes | `string` | The key of the data item you'd like to remove.
-username | No | `string` | The user's username.
-user_token | No | `string` | The user's token.
+`game_id` | Yes | `string` | The ID of your game.
+`key` | Yes | `string` | The key of the data item you'd like to remove.
+`username` | No | `string` | The user's username.
+`user_token` | No | `string` | The user's token.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Remarks
 

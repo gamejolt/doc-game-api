@@ -12,16 +12,16 @@ Opens a game session for a particular user and allows you to tell Game Jolt that
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-username | Yes | `string` | The user's username.
-user_token | Yes | `string` | The user's token.
+`game_id` | Yes | `string` | The ID of your game.
+`username` | Yes | `string` | The user's username.
+`user_token` | Yes | `string` | The user's token.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Remarks
 

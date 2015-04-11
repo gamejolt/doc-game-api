@@ -12,21 +12,21 @@ Adds a score for a user or guest.
 
 Name | Required? | Type | Description
 --- | --- | --- | ---
-game_id | Yes | `string` | The ID of your game.
-username | No | `string` | The user's username.
-user_token | No | `string` | The user's token.
-guest | No | `string` | The guest's name.
-score | Yes | `string` | This is a string value associated with the score. **Example**: `500 Points`
-sort | Yes | `integer` | This is a numerical sorting value associated with the score. All sorting will be based on this number. **Example**: `500`
-extra_data | No | `string` | If there's any extra data you would like to store as a string, you can use this variable.
-table_id | No | `integer` | The ID of the score table to submit to.
+`game_id` | Yes | `string` | The ID of your game.
+`username` | No | `string` | The user's username.
+`user_token` | No | `string` | The user's token.
+`guest` | No | `string` | The guest's name.
+`score` | Yes | `string` | This is a string value associated with the score. **Example**: `500 Points`
+`sort` | Yes | `integer` | This is a numerical sorting value associated with the score. All sorting will be based on this number. **Example**: `500`
+`extra_data` | No | `string` | If there's any extra data you would like to store as a string, you can use this variable.
+`table_id` | No | `integer` | The ID of the score table to submit to.
 
 ## Returns
 
 Name | Type | Description
 --- | --- | ---
-success | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-message | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
 ## Remarks
 
