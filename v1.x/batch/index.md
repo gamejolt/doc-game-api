@@ -2,7 +2,7 @@
 
 A batch request is a collection of subrequests that enables developers to send multiple API calls with one HTTP request.
 
-Because the constructed URL can become quite lengthy, the entire request is sent via POST data. If the URL is not too long, you can send it via GET request as well.
+When you construct the URL for a batch request, it can become quite long. Because of this, you can send the request via POST data instead of GET. However, you're also free to pass it as a GET request. 
 
 ## URL Endpoint
 
