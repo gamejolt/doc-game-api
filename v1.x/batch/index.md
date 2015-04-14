@@ -64,11 +64,11 @@ requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d49
 
 All values of the sub URL, except the signature, need to be URL encoded.
 
-After the encoding of values is done, add the signature to the URL.
-
 Also, once the entire sub URL is constructed, everything after `&requests[]=` needs to be URL encoded as well.
 
-This results in double URl encoding for the values.
+This results in double URL encoding for the values.
+
+The signature for the main URL is appended to the end, and is crafted only for the main URL, not for the sub URLs.
 
 ### Steps
 
