@@ -26,24 +26,6 @@ Name | Type | Description
 `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 `message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
-### Main URL Construction (GET Requests)
-
-When making a batch request, you are bundling multiple API calls together into one HTTP request, so you need to pack your requests into one URL.
-
-The main URL would look like this:
-
-```
-http://gamejolt.com/api/game/v1_2/batch/?game_id=32&format=json&signature=912ec803b2ce49e4a541068d495ab570
-```
-
-The main URL gets constructed the same way a single-call URL is constructed:
-
-```
-"http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + "&signature=" + md5( "http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + privateKey )
-```
-
-Note that [Dump format](formats/dump.md) is not supported in batch calls.
-
 ### Sub URL Construction
 
 The sub URL contains multiple single-call URLs.
@@ -68,9 +50,34 @@ Multiple single-call URLs in the same sub URL would look like this:
 requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
+#### Steps
+
+This is an easy step-by-step guide for how to construct a sub URL:
+
+1. Construct the normal URL (URL Endpoint and parameters) and encode every value of every parameter.
+2. Add a signature to the URL.
+3. Encode the entire URL.
+4. Add `requests[]=` before the URL if it is the first one in the batch. If it is not the first, add `&requests[]=`.
+
+### Main URL Construction (GET Requests)
+
+When making a batch request, you are bundling multiple API calls together into one HTTP request, so you need to pack your requests into one URL.
+
+The main URL would look like this:
+
+```
+http://gamejolt.com/api/game/v1_2/batch/?game_id=32&format=json&signature=912ec803b2ce49e4a541068d495ab570
+```
+
+The main URL gets constructed the same way a single-call URL is constructed:
+
+```
+"http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + "&signature=" + md5( "http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + privateKey )
+```
+
 ### POST Request Construction
 
-A POST request looks the same as a GET request:
+The main URL for a POST request looks the same as a GET request:
 
 ```
 http://gamejolt.com/api/game/batch/?game_id=1&format=someformat&signature=SIGNATURE
@@ -123,7 +130,7 @@ This is simply the URL encoding of:
 
 ### Encoding
 
-All values of the sub URL, except the signature, need to be URL encoded.
+All values of the sub URLs, except the signatures, need to be URL encoded.
 
 Also, once the entire sub URL is constructed, everything after `requests[]=` and `&requests[]=` needs to be URL encoded as well.
 
@@ -131,19 +138,11 @@ This results in double URL encoding for the values.
 
 The signature for the main URL is appended to the end, and is crafted only for the main URL, not for the sub URLs.
 
-### Steps
-
-This is an easy step-by-step guide for how to construct a sub URL:
-
-1. Construct the normal URL (URL Endpoint and parameters) and encode every value of every parameter.
-2. Add a signature to the URL.
-3. Encode the entire URL.
-4. Add `requests[]=` before the URL if it is the first one in the batch. If it is not the first, add `&requests[]=`.
-
 ## Remarks
 
 - The maximum amount of sub requests in one batch request is 50.
 - The `parallel` and `break_on_error` parameters cannot be used in the same request.
+- Note that [Dump format](formats/dump.md) is not supported in batch calls.
 - For more information on how to use the batch request, visit the [Construction](../construction.md) page.
 
 ## Syntax
