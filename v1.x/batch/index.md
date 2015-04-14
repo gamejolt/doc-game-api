@@ -26,6 +26,14 @@ Name | Type | Description
 `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 `message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
+### Basic Construction
+
+The steps to creating a batch request are:
+
+1. Encode the sub URLs for each request in the batch. Then, do one of the following:
+2. For a GET, append the requests to the main URL and md5() the whole thing.
+3. For a POST, put the requests in the POST data and construct the main URL like normal.
+
 ### Sub URL Construction
 
 The sub URL contains multiple single-call URLs.
