@@ -47,17 +47,17 @@ The sub URL contains multiple single-call URLs.
 One URL would look similar to this:
 
 ```
-&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
+requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
 It is constructed the same way as single-call URLs, but with the URL of the Game API and the API version removed.
 
-Also, it starts with `&requests[]=`
+The first sub URL starts with `requests[]=` and all others start with `&requests[]=`.
 
 Multiple single-call URLs in the same sub URL would look like this:
 
 ```
-&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
+requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
 ### Encoding
