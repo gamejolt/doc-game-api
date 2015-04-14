@@ -36,7 +36,11 @@ The main URL would look like this:
 http://gamejolt.com/api/game/v1_2/batch/?game_id=32&format=json&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
-The main URL gets constructed the same way a single-call URL is constructed.
+The main URL gets constructed the same way a single-call URL is constructed:
+
+```
+"http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + "&signature=" + md5( "http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + privateKey )
+```
 
 Note that [Dump format](formats/dump.md) is not supported in batch calls.
 
@@ -44,13 +48,17 @@ Note that [Dump format](formats/dump.md) is not supported in batch calls.
 
 The sub URL contains multiple single-call URLs.
 
-One URL would look similar to this:
+One sub URL would look similar to this:
 
 ```
 requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
-It is constructed the same way as single-call URLs, but with the URL of the Game API and the API version removed.
+It is constructed the same way as a single-call URL, but with the URL of the Game API and the API version removed:
+
+```
+"requests[]=" + urlencode( "/data-store/get/?username=test&user_token=test-token&key=test&game_id=456" + "&signature=" + md5( "/data-store/get/?username=test&user_token=test-token&key=test&game_id=456" + privateKey ) )
+```
 
 The first sub URL starts with `requests[]=` and all others start with `&requests[]=`.
 
