@@ -50,6 +50,16 @@ Multiple single-call URLs in the same sub URL would look like this:
 requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
+#### Encoding
+
+All values of the sub URLs, except the signatures, need to be URL encoded.
+
+Also, once the entire sub URL is constructed, everything after `requests[]=` and `&requests[]=` needs to be URL encoded as well.
+
+This results in double URL encoding for the values.
+
+The signature for the main URL is appended to the end, and is crafted only for the main URL, not for the sub URLs.
+
 #### Steps
 
 This is an easy step-by-step guide for how to construct a sub URL:
@@ -86,8 +96,8 @@ http://gamejolt.com/api/game/batch/?game_id=1&format=someformat&signature=SIGNAT
 The signature is crafted in exactly the same way as other requests. You do the hash part only for the URL you're calling. Each sub URL needs to be URL encoded and have its own signature.
 
 ```
-requests[]=URL ENCODE OF /data-store/set/?key=blahblahblah
-&requests[]=URL ENCODE OF /data-store/?key=blahblah
+requests[]=url_encode( '/data-store/set/?key=blahblahblah' )
+&requests[]=url_encode( '/data-store/set/?key=blahblahblah' )
 ```
 
 The signature is for the sub URL part only (`/data-store/set/?key=blahblahblah`) and not for the entire URL (`http://gamejolt.com/api/game/v1_1/data-store/set/?key=blahblahblah`).
@@ -98,7 +108,7 @@ The basic construction is:
 requests[]=urlencode(/data-store/set/?key=blahblahblah)` + `&signature=makeSignatureFrom(/data-store/set/?key=blahblahblah` + `privatekey)
 ```
 
-#### Example POST Request
+#### Example
 
 The URL you're calling is:
 
@@ -128,16 +138,6 @@ This is simply the URL encoding of:
 /data-store/set/?username=test&user_token=test-token&key=test&data=testing+this+out2&restriction_username=test&restriction_user_token=test-token&game_id=456&signature=36b6017d9f8e76966a931456245c41f2
 ```
 
-### Encoding
-
-All values of the sub URLs, except the signatures, need to be URL encoded.
-
-Also, once the entire sub URL is constructed, everything after `requests[]=` and `&requests[]=` needs to be URL encoded as well.
-
-This results in double URL encoding for the values.
-
-The signature for the main URL is appended to the end, and is crafted only for the main URL, not for the sub URLs.
-
 ## Remarks
 
 - The maximum amount of sub requests in one batch request is 50.
@@ -157,3 +157,5 @@ The signature for the main URL is appended to the end, and is crafted only for t
 Version		 | Description
 ---			 | ---
 1.2			 | First implementation
+
+
