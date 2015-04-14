@@ -26,7 +26,7 @@ Name | Type | Description
 `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 `message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
-### Main URL Construction
+### Main URL Construction (GET Requests)
 
 When making a batch request, you are bundling multiple API calls together into one HTTP request, so you need to pack your requests into one URL.
 
@@ -72,12 +72,61 @@ This results in double URl encoding for the values.
 
 ### Steps
 
-This is an easy step-by-step guide on how to construct the sub URL:
+This is an easy step-by-step guide for how to construct the sub URL:
 
 1. Construct the normal URL (URL Endpoint and parameters) and encode every value of every parameter.
 2. Add a signature to the URL.
 3. Encode the entire URL.
 4. Add `&requests[]=` before the URL.
+
+### POST Request Construction
+
+A POST request needs to look something like this:
+
+```
+http://gamejolt.com/api/game/batch/?game_id=1&format=someformat&signature=SIGNATURE
+```
+
+The signature is crafted in exactly the same way as other requests. You do the hash part only for the URL you're calling. Each sub URL needs to be URL encoded and have its own signature.
+
+```
+requests[]=URL ENCODE OF /data-store/set/?key=blahblahblah
+&requests[]=URL ENCODE OF /data-store/?key=blahblah
+```
+
+The signature is for the sub URL part only (`/data-store/set/?key=blahblahblah`) and not for the entire URL (`http://gamejolt.com/api/game/v1_1/data-store/set/?key=blahblahblah`).
+
+The basic construction is `requests[]=urlencode(/data-store/set/?key=blahblahblah)` + `&signature=makeSignatureFrom(/data-store/set/?key=blahblahblah` + `privatekey)`
+
+#### Example POST Request
+
+The URL you're calling is:
+
+```
+http://gamejolt.com/api/game/v1_1/batch/?&game_id=456&format=json&signature=7a84fdc2bc3165c0d908460f11e2490b
+```
+
+The signature is for the `http://gamejolt.com/api/game/v1_1/batch/?&game_id=456&format=json` part.
+
+The POST data contains:
+
+```
+requests[]=%2Fdata-store%2Fset%2F%3Fusername%3Dtest%26user_token%3Dtest-token%26key%3Dtest%26data%3Dtesting%2Bthis%2Bout2%26restriction_username%3Dtest%26restriction_user_token%3Dtest-token%26game_id%3D456%26signature%3D36b6017d9f8e76966a931456245c41f2&requests[]=%2Fdata-store%2Fset%2F%3Fkey%3Dtest%26data%3Dglobal%2Btest%26restriction_username%3Dtest%26restriction_user_token%3Dtest-token%26game_id%3D456%26signature%3D28733604753bff0a49433f8623984934&requests[]=%2Fdata-store%2Fget%2F%3Fusername%3Dtest%26user_token%3Dtest-token%26key%3Dtest%26game_id%3D456%26signature%3D93f514de8030a6da4d3187b92ae778ec
+```
+
+Everything is URL encoded (besides `requests[]=`) and every sub URL has its own signature.
+
+Let's look at the first request in the batch:
+
+```
+%2Fdata-store%2Fset%2F%3Fusername%3Dtest%26user_token%3Dtest-token%26key%3Dtest%26data%3Dtesting%2Bthis%2Bout2%26restriction_username%3Dtest%26restriction_user_token%3Dtest-token%26game_id%3D456%26signature%3D36b6017d9f8e76966a931456245c41f2
+```
+
+This is simply the URL encoding of:
+
+```
+/data-store/set/?username=test&user_token=test-token&key=test&data=testing+this+out2&restriction_username=test&restriction_user_token=test-token&game_id=456&signature=36b6017d9f8e76966a931456245c41f2
+```
 
 ## Remarks
 
