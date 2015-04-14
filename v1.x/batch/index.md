@@ -64,7 +64,7 @@ requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d49
 
 All values of the sub URL, except the signature, need to be URL encoded.
 
-Also, once the entire sub URL is constructed, everything after `&requests[]=` needs to be URL encoded as well.
+Also, once the entire sub URL is constructed, everything after `requests[]=` and `&requests[]=` needs to be URL encoded as well.
 
 This results in double URL encoding for the values.
 
@@ -72,12 +72,12 @@ The signature for the main URL is appended to the end, and is crafted only for t
 
 ### Steps
 
-This is an easy step-by-step guide for how to construct the sub URL:
+This is an easy step-by-step guide for how to construct a sub URL:
 
 1. Construct the normal URL (URL Endpoint and parameters) and encode every value of every parameter.
 2. Add a signature to the URL.
 3. Encode the entire URL.
-4. Add `&requests[]=` before the URL.
+4. Add `requests[]=` before the URL if it is the first one in the batch. If it is not the first, add `&requests[]=`.
 
 ### POST Request Construction
 
