@@ -1,6 +1,6 @@
 # Batch
 
-A batch request is a collection of subrequests that enables developers to send multiple API calls with one HTTP request.
+A batch request is a collection of sub-requests that enables developers to send multiple API calls with one HTTP request.
 
 When you construct the URL for a batch request, it can become quite long. Because of this, you can send the request via POST data instead of GET. However, you're also free to pass it as a GET request. 
 
@@ -15,9 +15,9 @@ When you construct the URL for a batch request, it can become quite long. Becaus
 Name | Required? | Type | Description
 --- | --- | --- | ---
 `game_id` | Yes | `string` | The ID of your game.
-`parallel` | No | `boolean` | If this is set to `true`, then all subrequests in the batch will be processed at the same time.
-`break_on_error` | No | `boolean` | If this is set to `true`, one subrequest failure will cause the entire batch to stop processing subrequests and return a value of `false` for `success`.
-`requests[]` | Yes | `string[]` | An array of request sub-urls. Each request will be executed and the responses of each one will be returned in the payload. You must URL-encode each sub-request as well.
+`parallel` | No | `boolean` | By default, each sub-request is processed on the servers sequentially. If this is set to `true`, then all sub-requests are processed at the same time, without waiting for the previous sub-request to finish before the next one is started.
+`break_on_error` | No | `boolean` | If this is set to `true`, one sub-request failure will cause the entire batch to stop processing subsequent sub-requests and return a value of `false` for `success`.
+`requests[]` | Yes | `string[]` | An array of sub-request URLs. Each request will be executed and the responses of each one will be returned in the payload. You must URL-encode each sub-request.
 
 ## Returns
 
@@ -26,138 +26,92 @@ Name | Type | Description
 `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 `message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
 
-### Basic Construction
+### Sub-Request Construction
 
-The steps to creating a batch request are:
+When making a batch call, you pass in multiple sub-requests in one request. This allows you to do cool things like setting multiple keys at once in the data store.
 
-1. Encode the sub URLs for each request in the batch. Then, do one of the following:
-2. For a GET, append the requests to the main URL and md5() the whole thing.
-3. For a POST, put the requests in the POST data and construct the main URL like normal.
+To start, you must construct each sub-request. After that, you'll package each sub-request into the main batch API call.
 
-### Sub URL Construction
-
-The sub URL contains multiple single-call URLs.
-
-One sub URL would look similar to this:
-
+One sub-request would look similar to this:
 ```
-requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
+/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
-It is constructed the same way as a single-call URL, but with the URL of the Game API and the API version removed:
+As you can see, it is constructed the same way as a single-call URL, but with the URL of the Game API and the API version removed.
+
+Because sub-requests are passed into a main request, you need to make sure their parameters are sanitized. To do that, you must URL-encode each sub-request before adding it into the main batch call.
+
+Many programming libraries have a `urlencode` function or something similar that will do this for you. You can use the following website to encode and test your sub-request calls: http://meyerweb.com/eric/tools/dencoder/.
+
+Our example sub-request URL would look similar to the pseudo-code below:
 
 ```
-"requests[]=" + urlencode( "/data-store/get/?username=test&user_token=test-token&key=test&game_id=456" + "&signature=" + md5( "/data-store/get/?username=test&user_token=test-token&key=test&game_id=456" + privateKey ) )
+urlencode( '/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570' )
 ```
 
-The first sub URL starts with `requests[]=` and all others start with `&requests[]=`.
-
-Multiple single-call URLs in the same sub URL would look like this:
+The encoded output would be:
 
 ```
-requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570&requests[]=/data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
+%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570%0A
 ```
 
-#### Encoding
+This is now a sanitized sub-request URL that can be used in the main request API call. 
 
-All values of the sub URLs, except the signatures, need to be URL encoded.
-
-Also, once the entire sub URL is constructed, everything after `requests[]=` and `&requests[]=` needs to be URL encoded as well.
-
-This results in double URL encoding for the values.
-
-The signature for the main URL is appended to the end, and is crafted only for the main URL, not for the sub URLs.
-
-#### Steps
-
-This is an easy step-by-step guide for how to construct a sub URL:
-
-1. Construct the normal URL (URL Endpoint and parameters) and encode every value of every parameter.
-2. Add a signature to the URL.
-3. Encode the entire URL.
-4. Add `requests[]=` before the URL if it is the first one in the batch. If it is not the first, add `&requests[]=`.
-
-### Main URL Construction (GET Requests)
-
-When making a batch request, you are bundling multiple API calls together into one HTTP request, so you need to pack your requests into one URL.
-
-The main URL would look like this:
+Next, you have to attach the sub-request to the `requests[]` parameter. The finalized sub-request would be:
 
 ```
-http://gamejolt.com/api/game/v1_2/batch/?game_id=32&format=json&signature=912ec803b2ce49e4a541068d495ab570
+requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570%0A
 ```
 
-The main URL gets constructed the same way a single-call URL is constructed:
+Finally, you join all your sub-request parameters together with `&`.
+
+Multiple sub-request parameters joined together would look like this:
 
 ```
-"http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + "&signature=" + md5( "http://gamejolt.com/api/game/v1_1/batch?&game_id=456&format=json" + privateKey )
+requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570
 ```
 
-### POST Request Construction
 
-The main URL for a POST request looks the same as a GET request:
+#### Main URL Construction
 
-```
-http://gamejolt.com/api/game/batch/?game_id=1&format=someformat&signature=SIGNATURE
-```
-
-The signature is crafted in exactly the same way as other requests. You do the hash part only for the URL you're calling. Each sub URL needs to be URL encoded and have its own signature.
+After you have your list of sub-requests, you need to attach it to a batch URL request. That would look like this:
 
 ```
-requests[]=url_encode( '/data-store/set/?key=blahblahblah' )
-&requests[]=url_encode( '/data-store/set/?key=blahblahblah' )
+http://gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570
 ```
 
-The signature is for the sub URL part only (`/data-store/set/?key=blahblahblah`) and not for the entire URL (`http://gamejolt.com/api/game/v1_1/data-store/set/?key=blahblahblah`).
-
-The basic construction is:
+You would then [construct your signature](../construction.md) for the entire batch call like normal. After constructing the signature for the batch call, you final URL would be:
 
 ```
-requests[]=urlencode(/data-store/set/?key=blahblahblah)` + `&signature=makeSignatureFrom(/data-store/set/?key=blahblahblah` + `privatekey)
+http://gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
-#### Example
-
-The URL you're calling is:
-
-```
-http://gamejolt.com/api/game/v1_1/batch/?&game_id=456&format=json&signature=7a84fdc2bc3165c0d908460f11e2490b
-```
-
-The signature is for the `http://gamejolt.com/api/game/v1_1/batch/?&game_id=456&format=json` part.
-
-The POST data contains:
-
-```
-requests[]=%2Fdata-store%2Fset%2F%3Fusername%3Dtest%26user_token%3Dtest-token%26key%3Dtest%26data%3Dtesting%2Bthis%2Bout2%26restriction_username%3Dtest%26restriction_user_token%3Dtest-token%26game_id%3D456%26signature%3D36b6017d9f8e76966a931456245c41f2&requests[]=%2Fdata-store%2Fset%2F%3Fkey%3Dtest%26data%3Dglobal%2Btest%26restriction_username%3Dtest%26restriction_user_token%3Dtest-token%26game_id%3D456%26signature%3D28733604753bff0a49433f8623984934&requests[]=%2Fdata-store%2Fget%2F%3Fusername%3Dtest%26user_token%3Dtest-token%26key%3Dtest%26game_id%3D456%26signature%3D93f514de8030a6da4d3187b92ae778ec
-```
-
-Everything is URL encoded (besides `requests[]=`) and every sub URL has its own signature.
-
-Let's look at the first request in the batch:
-
-```
-%2Fdata-store%2Fset%2F%3Fusername%3Dtest%26user_token%3Dtest-token%26key%3Dtest%26data%3Dtesting%2Bthis%2Bout2%26restriction_username%3Dtest%26restriction_user_token%3Dtest-token%26game_id%3D456%26signature%3D36b6017d9f8e76966a931456245c41f2
-```
-
-This is simply the URL encoding of:
-
-```
-/data-store/set/?username=test&user_token=test-token&key=test&data=testing+this+out2&restriction_username=test&restriction_user_token=test-token&game_id=456&signature=36b6017d9f8e76966a931456245c41f2
-```
+Note that you can also pass your `request[]` parameters in as POST data if your URL gets too long.
 
 ## Remarks
 
 - The maximum amount of sub requests in one batch request is 50.
+- [Dump format](formats/dump.md) is not supported in batch calls.
 - The `parallel` and `break_on_error` parameters cannot be used in the same request.
-- Note that [Dump format](formats/dump.md) is not supported in batch calls.
 - For more information on how to use the batch request, visit the [Construction](../construction.md) page.
+
+
+### `break_on_error` Parameter
+
+By default, if a sub-request fails, the rest of the sub-requests in the batch call will still be executed. If your sub-requests are dependent on each other, you can set `break_on_error` to `true`. This parameter will stop the rest of the batch from being processed when one sub-request produces an error.
+
+This can be useful if, for example, you want to check if a key is set before updating it. It could also be useful if you're adding a score and then updating a data storage item based on that score, because you would only want to set the data storage item if the score was successfully added.
+
+### `parallel` Parameter
+
+By default, sub-requests in a batch call are processed in sequence. If your sub-requests don't need to be called sequentially, you can set `parallel` to `true`. All of your sub-requests will be run at the same time, which results in much faster returns than a non-parallel request would produce. This is handy if you're setting several data storage items at once, or if you're retrieving data from multiple endpoints.
 
 ## Syntax
 
 ```
-/batch/?game_id=xxxxx&parallel=true
-/batch/?game_id=xxxxx&break_on_error=true
+/batch/?game_id=xxxxx&requests[]=xxxxx&requests[]=xxxxx
+/batch/?game_id=xxxxx&requests[]=xxxxx&requests[]=xxxxx&parallel=true
+/batch/?game_id=xxxxx&requests[]=xxxxx&requests[]=xxxxx&break_on_error=true
 ```
 
 ## Version history
@@ -165,5 +119,3 @@ This is simply the URL encoding of:
 Version		 | Description
 ---			 | ---
 1.2			 | First implementation
-
-
