@@ -77,13 +77,13 @@ requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2
 After you have your list of sub-requests, you need to attach it to a batch URL request. That would look like this:
 
 ```
-http://gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570
+http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570
 ```
 
 You would then [construct your signature](../construction.md) for the entire batch call like normal. After constructing the signature for the batch call, you final URL would be:
 
 ```
-http://gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&signature=912ec803b2ce49e4a541068d495ab570
+http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&signature=912ec803b2ce49e4a541068d495ab570
 ```
 
 Note that you can also pass your `request[]` parameters in as POST data if your URL gets too long.

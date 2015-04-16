@@ -24,5 +24,5 @@ Value | Description
 ## Example
 
 ```
-http://gamejolt.com/api/game/v1/?format=json
+http://api.gamejolt.com/api/game/v1/?format=json
 ```
