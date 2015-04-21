@@ -16,10 +16,10 @@ Passing in the username and token can sometimes interrupt the flow of your game,
 
 ## Requests
 
-Name							| Description
----								| ---
-[__Auth__](auth.md)				| Verfies a username-token combination.
-[__Fetch__](users.md)			| Fetches user information.
+Name | Description
+---	| ---
+[**Auth**](auth.md)	| Verfies a username-token combination.
+[**Fetch**](https://github.com/gamejolt/doc-game-api/blob/master/v1.x/users/fetch.md) | Fetches user information.
 
 ## Example Uses
 
