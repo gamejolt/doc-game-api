@@ -12,14 +12,14 @@ Name | Required? | Type | Description
 --- | --- | --- | ---
 `format` | No | `string` | The format in which to return the response.
 
-### Valid `format` Values
+### Valid Values for `format` 
 
 Value | Description
 --- | ---
-[JSON](json.md) | Returns data in the JSON format.
+[json](json.md) | Returns data in the JSON format.
 [keypair](keypair.md) | Returns data in the keypair format.
-[Dump](dump.md) | Returns data in the Dump format.
-[XML](xml.md) | Returns data in the XML format.
+[dump](dump.md) | Returns data in the Dump format.
+[xml](xml.md) | Returns data in the XML format.
 
 ## Example
 
