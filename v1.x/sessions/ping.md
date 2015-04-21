@@ -19,7 +19,7 @@ Name | Required? | Type | Description
 `user_token` | Yes | `string` | The user's token.
 `status` | No | `string` | Sets the status of the session.
 
-### Valid Values for `value`
+### Valid Values for `status`
  
 Value | Description
 ---	| ---
