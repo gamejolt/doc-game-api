@@ -7,7 +7,7 @@ This page displays all changes made to version **1.2**.
 ### New URL Endpoints
 
 - [**/get-time/**](get-time/index.md)
-- [**/batch/**](batch/batch.md)
+- [**/batch/**](batch/index.md)
 - [**/sessions/check/**](sessions/check.md)
 
 ### Updated URL Endpoints
