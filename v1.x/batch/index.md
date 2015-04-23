@@ -116,6 +116,6 @@ By default, sub-requests in a batch call are processed in sequence. If your sub-
 
 ## Version history
 
-Version		 | Description
----			 | ---
-1.2			 | First implementation
+Version | Description
+--- | ---
+1.2 | First implementation

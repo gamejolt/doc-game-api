@@ -31,6 +31,6 @@ Name | Type | Description
 
 ## Version history
 
-Version		 | Description
----			 | ---
-1.2			 | First implementation
+Version | Description
+--- | ---
+1.2 | First implementation

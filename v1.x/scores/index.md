@@ -13,11 +13,11 @@ With multiple formatting and sorting options, the system is quite flexible. You 
 ## Requests
 
 Name | Description
----	| ---
+--- | ---
 [**Add**](add.md) | Adds a score.
 [**Get Rank**](get-rank.md) | Gets a rank for a specific score.
 [**Fetch**](fetch.md) | Fetches scores from a score table.
-[**Tables**](tables.md)	| Fetches a list of score tables.
+[**Tables**](tables.md) | Fetches a list of score tables.
 
 ## Example Uses
 
@@ -30,7 +30,7 @@ Name | Description
 
 ## Version history
 
-Version		| Description
----			| ---
-1.2			| Implemented the `Get Rank` request.
-1.0			| First implementation
+Version | Description
+--- | ---
+1.2 | Implemented the `Get Rank` request.
+1.0 | First implementation

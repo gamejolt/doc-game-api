@@ -22,7 +22,7 @@ Name | Required? | Type | Description
 ### Valid Values for `status`
  
 Value | Description
----	| ---
+--- | ---
 `active` | Sets the session to the `active` state.
 `idle` | Sets the session to the `idle` state.
 
@@ -42,6 +42,6 @@ Name | Type | Description
 
 ## Version history
 
-Version		 | Description
----			 | ---
-1.0			 | First implementation
+Version | Description
+--- | ---
+1.0 | First implementation
