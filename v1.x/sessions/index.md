@@ -9,12 +9,12 @@ Sessions are used to tell Game Jolt when a user is playing a game, and what stat
 
 ## Requests
 
-Name							| Description
----								| ---
-[__Open__](open.md)				| Opens a session.
-[__Ping__](ping.md)				| Pings a session.
-[__Check__](check.md)			| Checks if a session is open.
-[__Close__](close.md)			| Closes a session.
+Name | Description
+--- | ---
+[__Open__](open.md) | Opens a session.
+[__Ping__](ping.md) | Pings a session.
+[__Check__](check.md) | Checks if a session is open.
+[__Close__](close.md) | Closes a session.
 
 ## Example Uses
 
@@ -31,7 +31,7 @@ Sessions are currently only shown to other users in Public Chat. In the near fut
 
 ## Version history
 
-Version		| Description
----			| ---
-1.2			| Added user tracking features.
-1.0			| First implementation
+Version | Description
+--- | ---
+1.2 | Added user tracking features.
+1.0 | First implementation

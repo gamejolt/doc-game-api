@@ -19,7 +19,7 @@ Name | Required? | Type | Description
 `operation` | Yes | `string` | The operation you'd like to perform.
 `value` | Yes | `string` or `integer` | The value you'd like to apply to the data store item. <br> (See table below.)
 
-### Valid Values for `value`
+### Valid Values for `operation`
 
 Value | Description
 --- | ---
@@ -52,6 +52,6 @@ Name | Type | Description
 
 ## Version history
 
-Version		 | Description
----			 | ---
-1.0			 | First implementation
+Version | Description
+--- | ---
+1.0 | First implementation

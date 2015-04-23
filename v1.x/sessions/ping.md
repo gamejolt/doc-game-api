@@ -19,10 +19,10 @@ Name | Required? | Type | Description
 `user_token` | Yes | `string` | The user's token.
 `status` | No | `string` | Sets the status of the session.
 
-### Valid Values for `value`
+### Valid Values for `status`
  
 Value | Description
----	| ---
+--- | ---
 `active` | Sets the session to the `active` state.
 `idle` | Sets the session to the `idle` state.
 
@@ -42,6 +42,6 @@ Name | Type | Description
 
 ## Version history
 
-Version		 | Description
----			 | ---
-1.0			 | First implementation
+Version | Description
+--- | ---
+1.0 | First implementation

@@ -16,10 +16,10 @@ You can also tag trophies on the site as "secret". A sercet trophy's image and d
 
 ## Requests
 
-Name							| Description
----								| ---
-[__Fetch__](trophies.md)						| Fetches trophies with various attributes.
-[__Set Achieved__](set-achieved.md)				| Sets whether a user achieved a trophy.
+Name | Description
+--- | ---
+[**Fetch**](fetch.md) | Fetches trophies with various attributes.
+[**Set Achieved**](set-achieved.md) | Sets whether a user achieved a trophy.
 
 ## Remarks
 
@@ -27,6 +27,6 @@ Name							| Description
 
 ## Version history
 
-Version		| Description
----			| ---
-1.0			| First implementation
+Version | Description
+--- | ---
+1.0 | First implementation

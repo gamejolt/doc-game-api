@@ -10,9 +10,9 @@ A namespace to obtain time information from the Game Jolt server.
 
 ## Requests
 
-Name							| Description
----								| ---
-[__Get Time__](get-time.md)		| Fetches the time from the server.
+Name | Description
+--- | ---
+[**Get Time**](fetch.md) | Fetches the time from the server.
 
 ## Example Uses
 
@@ -21,6 +21,6 @@ Name							| Description
 
 ## Version history
 
-Version		| Description
----			| ---
-1.2			| First implementation
+Version | Description
+--- | ---
+1.2 | First implementation

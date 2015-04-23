@@ -10,13 +10,13 @@ A cloud-based data storage system. It's completely up to you what you use this f
 
 ## Requests
 
-Name							| Description
----								| ---
-[__Fetch__](data-store.md)		| Fetches data from the data store.
-[__Get keys__](get-keys.md)		| Fetches keys of data items from the data store.
-[__Remove__](remove.md)			| Removes data items from the data store.
-[__Set__](set.md)				| Sets data in the data store.
-[__Update__](update.md)			| Updates data in the data store with various functions.
+Name | Description
+--- | ---
+[**Fetch**](fetch.md) | Fetches data from the data store.
+[**Get keys**](get-keys.md) | Fetches keys of data items from the data store.
+[**Remove**](remove.md) | Removes data items from the data store.
+[**Set**](set.md) | Sets data in the data store.
+[**Update**](update.md) | Updates data in the data store with various functions.
 
 ## Example uses
 
@@ -33,6 +33,6 @@ Name							| Description
 
 ## Version history
 
-Version		| Description
----			| ---
-1.0			| First implementation
+Version | Description
+--- | ---
+1.0 | First implementation

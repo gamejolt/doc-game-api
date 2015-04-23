@@ -43,7 +43,7 @@ message | `string` | If the request was not successful, this contains the error 
 
 ## Version history
 
-Version		 | Description
----			 | ---
-1.2			 | Added restriction feature.
-1.0			 | First implementation
+Version | Description
+--- | ---
+1.2 | Added restriction feature.
+1.0 | First implementation

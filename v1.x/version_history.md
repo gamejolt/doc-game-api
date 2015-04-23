@@ -1,16 +1,15 @@
 # Version History
 
-This page displays all changes made to version **1.2**.
-
-## Changes
+## Version 1.2
 
 ### New URL Endpoints
 
-- [__/get-time/__](get-time/index.md)
-- [__/batch/__](batch/batch.md)
+- [**/get-time/**](get-time/index.md)
+- [**/batch/**](batch/index.md)
+- [**/sessions/check/**](sessions/check.md)
 
 ### Updated URL Endpoints
 
-- [__/data-storage/__](data-storage/index.md): Added restriction feature to the [/set/](data-storage/set.md) request.
-- [__/data-storage/__](data-storage/index.md): Added `pattern` parameter to the [/get-keys/](data-storage/get-keys.md) request.
-- [__/scores/__](scores/index.md): Added the [/get-rank/](scores/get-rank.md) request.
+- [**/data-storage/**](data-storage/index.md): Added restriction feature to the [/set/](data-storage/set.md) request.
+- [**/data-storage/**](data-storage/index.md): Added `pattern` parameter to the [/get-keys/](data-storage/get-keys.md) request.
+- [**/scores/**](scores/index.md): Added the [/get-rank/](scores/get-rank.md) request.

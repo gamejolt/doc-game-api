@@ -18,7 +18,7 @@ Name | Required? | Type | Description
 
 ## Returns
 
-#Name | Type | Description
+Name | Type | Description
 --- | --- | ---
 `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 `message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `No such user could be found.`
@@ -46,6 +46,6 @@ Name | Required? | Type | Description
 
 ## Version history
 
-Version		 | Description
----			 | ---
-1.0			 | First implementation
+Version | Description
+--- | ---
+1.0 | First implementation
