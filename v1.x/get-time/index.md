@@ -11,8 +11,8 @@ A namespace to obtain time information from the Game Jolt server.
 ## Requests
 
 Name | Description
----	| ---
-[**Get Time**](https://github.com/gamejolt/doc-game-api/blob/master/v1.x/get-time/fetch.md)	| Fetches the time from the server.
+--- | ---
+[**Get Time**](fetch.md) | Fetches the time from the server.
 
 ## Example Uses
 

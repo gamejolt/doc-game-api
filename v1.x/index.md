@@ -16,7 +16,7 @@ Namespace | Description
 [**Sessions**](sessions/index.md) | Set up sessions for your game.
 [**Trophies**](trophies/index.md) | Manage trophies for your game.
 [**Users**](users/index.md) | Access user-based features.
-[**Batch**](https://github.com/gamejolt/doc-game-api/blob/master/v1.x/batch/index.md) | Merge multiple API calls into one request.
+[**Batch**](batch/index.md) | Merge multiple API calls into one request.
 
 ## Constructing Requests
 

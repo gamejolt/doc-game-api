@@ -16,7 +16,7 @@ Name | Description
 ---	| ---
 [**Add**](add.md) | Adds a score.
 [**Get Rank**](get-rank.md) | Gets a rank for a specific score.
-[**Fetch**](https://github.com/gamejolt/doc-game-api/blob/master/v1.x/scores/fetch.md) | Fetches scores from a score table.
+[**Fetch**](fetch.md) | Fetches scores from a score table.
 [**Tables**](tables.md)	| Fetches a list of score tables.
 
 ## Example Uses

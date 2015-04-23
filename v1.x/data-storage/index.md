@@ -12,7 +12,7 @@ A cloud-based data storage system. It's completely up to you what you use this f
 
 Name | Description
 ---	| ---
-[**Fetch**](https://github.com/gamejolt/doc-game-api/blob/master/v1.x/data-storage/fetch.md) | Fetches data from the data store.
+[**Fetch**](fetch.md) | Fetches data from the data store.
 [**Get keys**](get-keys.md)	| Fetches keys of data items from the data store.
 [**Remove**](remove.md)	| Removes data items from the data store.
 [**Set**](set.md) | Sets data in the data store.
