@@ -20,8 +20,8 @@ Name | Required? | Type | Description
 
 Name | Type | Description
 --- | --- | ---
-`success` | `boolean` | Whether the request succeeded or failed. **Example**: `true`
-`message` | `string` | If the request was not successful, this contains the error message. **Example**: `No such user could be found.`
+`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
+`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `No such user could be found.`
 `id` | `integer` | The ID of the user. <br> **Example**: `17441`
 `type` | `string` | The type of user. Can be `User`, `Developer`, `Moderator`, or `Administrator`. <br> **Example**: `User`
 `username` | `string` | The user's username. <br> **Example**: `indiegamehunt`
