@@ -1,8 +1,6 @@
 # Version History
 
-This page displays all changes made to version **1.2**.
-
-## Changes
+## Version 1.2
 
 ### New URL Endpoints
 
