@@ -18,8 +18,8 @@ Passing in the username and token can sometimes interrupt the flow of your game,
 
 Name | Description
 --- | ---
-[**Auth**](auth.md) | Verfies a username-token combination.
-[**Fetch**](fetch.md) | Fetches user information.
+[**Auth**](/users/auth.md) | Verfies a username-token combination.
+[**Fetch**](/users/fetch.md) | Fetches user information.
 
 ## Example Uses
 

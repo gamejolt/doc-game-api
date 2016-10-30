@@ -12,11 +12,11 @@ A cloud-based data storage system. It's completely up to you what you use this f
 
 Name | Description
 --- | ---
-[**Fetch**](fetch.md) | Fetches data from the data store.
-[**Get keys**](get-keys.md) | Fetches keys of data items from the data store.
-[**Remove**](remove.md) | Removes data items from the data store.
-[**Set**](set.md) | Sets data in the data store.
-[**Update**](update.md) | Updates data in the data store with various functions.
+[**Fetch**](/data-store/fetch.md) | Fetches data from the data store.
+[**Get keys**](/data-store/get-keys.md) | Fetches keys of data items from the data store.
+[**Remove**](/data-store/remove.md) | Removes data items from the data store.
+[**Set**](/data-store/set.md) | Sets data in the data store.
+[**Update**](/data-store/update.md) | Updates data in the data store with various functions.
 
 ## Example uses
 

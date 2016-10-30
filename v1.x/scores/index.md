@@ -2,7 +2,7 @@
 
 Game Jolt supports multiple online score tables, or scoreboards, per game. You are able to, for example, have a score table for each level in your game, or a table for different scoring metrics. Gamers will keep coming back to try to achieve the highest scores for your game.
 
-With multiple formatting and sorting options, the system is quite flexible. You are also able to include extra data with each score. If there is other data associated with the score such as time played, coins collected, etc., you should definitely include it. It will be helpful in cases where you believe a gamer has illegitimately achieved a high score. 
+With multiple formatting and sorting options, the system is quite flexible. You are also able to include extra data with each score. If there is other data associated with the score such as time played, coins collected, etc., you should definitely include it. It will be helpful in cases where you believe a gamer has illegitimately achieved a high score.
 
 ## URL Endpoint
 
@@ -14,10 +14,10 @@ With multiple formatting and sorting options, the system is quite flexible. You 
 
 Name | Description
 --- | ---
-[**Add**](add.md) | Adds a score.
-[**Get Rank**](get-rank.md) | Gets a rank for a specific score.
-[**Fetch**](fetch.md) | Fetches scores from a score table.
-[**Tables**](tables.md) | Fetches a list of score tables.
+[**Add**](/scores/add.md) | Adds a score.
+[**Get Rank**](/scores/get-rank.md) | Gets a rank for a specific score.
+[**Fetch**](/scores/fetch.md) | Fetches scores from a score table.
+[**Tables**](/scores/tables.md) | Fetches a list of score tables.
 
 ## Example Uses
 

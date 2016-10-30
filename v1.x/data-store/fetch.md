@@ -33,8 +33,8 @@ Name | Type | Description
 ## Syntax
 
 ```
-/data-storage/?game_id=xxxxx&key=myglobalkey
-/data-storage/?game_id=xxxxx&key=myuserkey&username=myusername&user_token=mytoken
+/data-store/?game_id=xxxxx&key=myglobalkey
+/data-store/?game_id=xxxxx&key=myuserkey&username=myusername&user_token=mytoken
 ```
 
 ## Version history
