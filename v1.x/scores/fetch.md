@@ -36,7 +36,7 @@ Name | Type | Description
 `user_id` | `integer` | If this is a user score, this is the user's ID. <br> **Example**: `17741`
 `guest` | `string` | If this is a guest score, this is the guest's submitted name. <br> **Example**: `guestname`
 `stored` | `string (date)` | Returns when the score was logged by the user. <br> **Example**: `1 week ago`
-`stored_timestamp` | `int` | Returns the timestamp of when the score was logged by the user. <br> **Example**: `1502471604`
+`stored_timestamp` | `int` | Returns the timestamp (in seconds) of when the score was logged by the user. <br> **Example**: `1502471604`
 
 ## Remarks
 

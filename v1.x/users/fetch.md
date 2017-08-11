@@ -27,9 +27,9 @@ Name | Type | Description
 `username` | `string` | The user's username. <br> **Example**: `indiegamehunt`
 `avatar_url` | `string (url)` | The URL of the user's avatar. <br> **Example**: `https://i1.wp.com/b6d3e9q9.ssl.hwcdn.net/img/no-avatar-3.png`
 `signed_up` | `string` | How long ago the user signed up. <br> **Example**: `1 year ago`
-`signed_up_timestamp` | `int` | The timestamp of when the user signed up. <br> **Example**: `1502471604`
+`signed_up_timestamp` | `int` | The timestamp (in seconds) of when the user signed up. <br> **Example**: `1502471604`
 `last_logged_in` | `string` | How long ago the user was last logged in. Will be `Online Now` if the user is currently online. <br> **Example**: `2 minutes ago`
-`last_logged_in_timestamp` | `int` | The timestamp of when the user was last logged in. <br> **Example**: `1502471604`
+`last_logged_in_timestamp` | `int` | The timestamp (in seconds) of when the user was last logged in. <br> **Example**: `1502471604`
 `status` | `string` | `Active` if the user is still a member of the site. `Banned` if they've been banned. <br> **Example**: `Active`
 `developer_name` | `string` | The user's developer name, if they are a developer. <br> **Example**: `nilllzz`
 `developer_website` | `string (url)` | The developer's website, if applicable. <br> **Example**: `http://www.nilllzz.tumblr.com/`

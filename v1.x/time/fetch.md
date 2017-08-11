@@ -20,7 +20,7 @@ Name | Type | Description
 --- | --- | ---
 `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
 `message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
-`timestamp` | `integer` | The UNIX time stamp representing the server's time. <br> **Example**: `1394374272`
+`timestamp` | `integer` | The UNIX time stamp (in seconds) representing the server's time. <br> **Example**: `1394374272`
 `timezone` | `string` | The timezone of the server. <br> **Example**: `America/New_York`
 `year` | `integer` | The current year. <br> **Example**: `2015`
 `month` | `integer` | The current month. <br> **Example**: `4`
