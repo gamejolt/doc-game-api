@@ -18,8 +18,8 @@ You can also tag trophies on the site as "secret". A sercet trophy's image and d
 
 Name | Description
 --- | ---
-[**Fetch**](/trophies/fetch.md) | Fetches trophies with various attributes.
-[**Set Achieved**](/trophies/set-achieved.md) | Sets whether a user achieved a trophy.
+[**Fetch**](https://gamejolt.com/game-api/doc/trophies/fetch) | Fetches trophies with various attributes.
+[**Set Achieved**](https://gamejolt.com/game-api/doc/trophies/set-achieved) | Sets whether a user achieved a trophy.
 
 ## Remarks
 

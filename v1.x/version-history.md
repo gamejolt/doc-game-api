@@ -4,12 +4,12 @@
 
 ### New URL Endpoints
 
-- [**/get-time/**](/time/index.md)
-- [**/batch/**](/batch/index.md)
-- [**/sessions/check/**](/sessions/check.md)
+- [**/get-time/**](https://gamejolt.com/game-api/doc/time)
+- [**/batch/**](https://gamejolt.com/game-api/doc/batch)
+- [**/sessions/check/**](https://gamejolt.com/game-api/doc/sessions/check)
 
 ### Updated URL Endpoints
 
-- [**/data-store/**](/data-store/index.md): Added restriction feature to the [/set/](/data-store/set.md) request.
-- [**/data-store/**](/data-store/index.md): Added `pattern` parameter to the [/get-keys/](/data-store/get-keys.md) request.
-- [**/scores/**](/scores/index.md): Added the [/get-rank/](/scores/get-rank.md) request.
+- [**/data-store/**](https://gamejolt.com/game-api/doc/data-store): Added restriction feature to the [/set/](https://gamejolt.com/game-api/doc/data-store/set) request.
+- [**/data-store/**](https://gamejolt.com/game-api/doc/data-store): Added `pattern` parameter to the [/get-keys/](https://gamejolt.com/game-api/doc/data-store/get-keys) request.
+- [**/scores/**](https://gamejolt.com/game-api/doc/scores): Added the [/get-rank/](https://gamejolt.com/game-api/doc/scores/get-rank) request.

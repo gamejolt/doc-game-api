@@ -80,7 +80,7 @@ After you have your list of sub-requests, you need to attach it to a batch URL r
 http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570
 ```
 
-You would then [construct your signature](/construction.md) for the entire batch call like normal. After constructing the signature for the batch call, your final URL would be:
+You would then [construct your signature](https://gamejolt.com/game-api/doc/construction) for the entire batch call like normal. After constructing the signature for the batch call, your final URL would be:
 
 ```
 http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&signature=912ec803b2ce49e4a541068d495ab570
@@ -91,9 +91,9 @@ Note that you can also pass your `request[]` parameters in as POST data if your 
 ## Remarks
 
 - The maximum amount of sub requests in one batch request is 50.
-- [Dump format](/formats/dump.md) is not supported in batch calls.
+- [Dump format](https://gamejolt.com/game-api/doc/formats/dump) is not supported in batch calls.
 - The `parallel` and `break_on_error` parameters cannot be used in the same request.
-- For more information on how to use the batch request, visit the [Construction](/construction.md) page.
+- For more information on how to use the batch request, visit the [Construction](https://gamejolt.com/game-api/doc/construction) page.
 
 
 ### `break_on_error` Parameter

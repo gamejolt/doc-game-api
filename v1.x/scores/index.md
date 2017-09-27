@@ -14,10 +14,10 @@ With multiple formatting and sorting options, the system is quite flexible. You 
 
 Name | Description
 --- | ---
-[**Add**](/scores/add.md) | Adds a score.
-[**Get Rank**](/scores/get-rank.md) | Gets a rank for a specific score.
-[**Fetch**](/scores/fetch.md) | Fetches scores from a score table.
-[**Tables**](/scores/tables.md) | Fetches a list of score tables.
+[**Add**](https://gamejolt.com/game-api/doc/scores/add) | Adds a score.
+[**Get Rank**](https://gamejolt.com/game-api/doc/scores/get-rank) | Gets a rank for a specific score.
+[**Fetch**](https://gamejolt.com/game-api/doc/scores/fetch) | Fetches scores from a score table.
+[**Tables**](https://gamejolt.com/game-api/doc/scores/tables) | Fetches a list of score tables.
 
 ## Example Uses
 

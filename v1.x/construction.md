@@ -32,7 +32,7 @@ The "data-store" part is the URL path that we use to retrieve an item from the d
 http://api.gamejolt.com/api/game/v1_2/data-store/
 ```
 
-(Look [here](/data-store/index.md) for more information about the data store.)
+(Look [here](https://gamejolt.com/game-api/doc/data-store) for more information about the data store.)
 
 
 Now we have to pass in some variables. This is done as simple GET query parameters. Note that you can also send the data through a POST method.

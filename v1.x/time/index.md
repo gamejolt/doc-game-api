@@ -12,7 +12,7 @@ A namespace to obtain time information from the Game Jolt server.
 
 Name | Description
 --- | ---
-[**Get Time**](/time/fetch.md) | Fetches the time from the server.
+[**Get Time**](https://gamejolt.com/game-api/doc/time/fetch) | Fetches the time from the server.
 
 ## Example Uses
 

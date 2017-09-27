@@ -12,11 +12,11 @@ A cloud-based data storage system. It's completely up to you what you use this f
 
 Name | Description
 --- | ---
-[**Fetch**](/data-store/fetch.md) | Fetches data from the data store.
-[**Get keys**](/data-store/get-keys.md) | Fetches keys of data items from the data store.
-[**Remove**](/data-store/remove.md) | Removes data items from the data store.
-[**Set**](/data-store/set.md) | Sets data in the data store.
-[**Update**](/data-store/update.md) | Updates data in the data store with various functions.
+[**Fetch**](https://gamejolt.com/game-api/doc/data-store/fetch) | Fetches data from the data store.
+[**Get keys**](https://gamejolt.com/game-api/doc/data-store/get-keys) | Fetches keys of data items from the data store.
+[**Remove**](https://gamejolt.com/game-api/doc/data-store/remove) | Removes data items from the data store.
+[**Set**](https://gamejolt.com/game-api/doc/data-store/set) | Sets data in the data store.
+[**Update**](https://gamejolt.com/game-api/doc/data-store/update) | Updates data in the data store with various functions.
 
 ## Example uses
 

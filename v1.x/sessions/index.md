@@ -11,10 +11,10 @@ Sessions are used to tell Game Jolt when a user is playing a game, and what stat
 
 Name | Description
 --- | ---
-[__Open__](/sessions/open.md) | Opens a session.
-[__Ping__](/sessions/ping.md) | Pings a session.
-[__Check__](/sessions/check.md) | Checks if a session is open.
-[__Close__](/sessions/close.md) | Closes a session.
+[__Open__](https://gamejolt.com/game-api/doc/sessions/open) | Opens a session.
+[__Ping__](https://gamejolt.com/game-api/doc/sessions/ping) | Pings a session.
+[__Check__](https://gamejolt.com/game-api/doc/sessions/check) | Checks if a session is open.
+[__Close__](https://gamejolt.com/game-api/doc/sessions/close) | Closes a session.
 
 ## Example Uses
 

@@ -16,10 +16,10 @@ Name | Required? | Type | Description
 
 Value | Description
 --- | ---
-[json](/formats/json.md) | Returns data in the JSON format.
-[keypair](/formats/keypair.md) | Returns data in the keypair format.
-[dump](/formats/dump.md) | Returns data in the Dump format.
-[xml](/formats/xml.md) | Returns data in the XML format.
+[json](https://gamejolt.com/game-api/doc/formats/json) | Returns data in the JSON format.
+[keypair](https://gamejolt.com/game-api/doc/formats/keypair) | Returns data in the keypair format.
+[dump](https://gamejolt.com/game-api/doc/formats/dump) | Returns data in the Dump format.
+[xml](https://gamejolt.com/game-api/doc/formats/xml) | Returns data in the XML format.
 
 ## Example
 

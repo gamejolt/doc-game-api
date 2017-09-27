@@ -18,8 +18,8 @@ Passing in the username and token can sometimes interrupt the flow of your game,
 
 Name | Description
 --- | ---
-[**Auth**](/users/auth.md) | Verfies a username-token combination.
-[**Fetch**](/users/fetch.md) | Fetches user information.
+[**Auth**](https://gamejolt.com/game-api/doc/users/auth) | Verfies a username-token combination.
+[**Fetch**](https://gamejolt.com/game-api/doc/users/fetch) | Fetches user information.
 
 ## Example Uses
 
