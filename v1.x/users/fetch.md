@@ -29,13 +29,14 @@ Name | Type | Description
 `signed_up` | `string` | How long ago the user signed up. <br> **Example**: `1 year ago`
 `last_logged_in` | `string` | How long ago the user was last logged in. Will be `Online Now` if the user is currently online. <br> **Example**: `2 minutes ago`
 `status` | `string` | `Active` if the user is still a member of the site. `Banned` if they've been banned. <br> **Example**: `Active`
-`developer_name` | `string` | The user's developer name, if they are a developer. <br> **Example**: `nilllzz`
-`developer_website` | `string (url)` | The developer's website, if applicable. <br> **Example**: `http://www.nilllzz.tumblr.com/`
-`developer_description` | `string` | The developer's profile description, if applicable. HTML tags and line breaks will be removed. <br> **Example**: `I am developing great games!`
+`developer_name` | `string` | The user's display name. <br> **Example**: `nilllzz`
+`developer_website` | `string (url)` | The user's website (or empty string if not specified). <br> **Example**: `http://www.nilllzz.tumblr.com/`
+`developer_description` | `string` | The user's profile description. HTML tags and line breaks will be removed. <br> **Example**: `I am developing great games!`
 
 ## Remarks
 
 - Only one parameter, `username` or `user_id`, is required in addition to `game_id`.
+- You can pass in multiple user ids by separating them with commas (`','`).
 
 ## Syntax
 
@@ -48,4 +49,5 @@ Name | Type | Description
 
 Version | Description
 --- | ---
+1.2 | The `developer_*` fields are available for all users, not just developers.
 1.0 | First implementation

@@ -14,7 +14,7 @@ Name | Required? | Type | Description
 --- | --- | --- | ---
 game_id | Yes | `string` | The ID of your game.
 key | Yes | `string` | The key of the data item you'd like to set.
-data | Yes | `string` | The data you'd like to set. Note that this should be a string, but can be sent through a `POST` request.
+data | Yes | `string` | The data you'd like to set. Note that this should be a string.
 username | No | `string` | The user's username.
 user_token | No | `string` | The user's token.
 restriction_username | No | `string` | The user's username.

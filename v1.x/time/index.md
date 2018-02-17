@@ -1,11 +1,11 @@
-# Get Time
+# Time
 
 A namespace to obtain time information from the Game Jolt server.
 
 ## URL Endpoint
 
 ```
-/get-time/
+/time/
 ```
 
 ## Requests

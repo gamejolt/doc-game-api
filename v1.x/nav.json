@@ -104,6 +104,10 @@
       {
         "title": "/set-achieved",
         "url": "/trophies/set-achieved"
+      },
+      {
+        "title": "/remove-achieved",
+        "url": "/trophies/remove-achieved"
       }
     ]
   },
@@ -134,11 +138,21 @@
     ]
   },
   {
+    "title": "Friends",
+    "url": "/friends",
+    "nav": [
+      {
+        "title": "/friends",
+        "url": "/friends/fetch"
+      }
+    ]
+  },
+  {
     "title": "Time",
     "url": "/time",
     "nav": [
       {
-        "title": "/get-time",
+        "title": "/time",
         "url": "/time/fetch"
       }
     ]

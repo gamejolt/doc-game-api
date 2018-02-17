@@ -2,7 +2,6 @@
 
 A batch request is a collection of sub-requests that enables developers to send multiple API calls with one HTTP request.
 
-When you construct the URL for a batch request, it can become quite long. Because of this, you can send the request via POST data instead of GET. However, you're also free to pass it as a GET request.
 
 ## URL Endpoint
 
@@ -85,8 +84,6 @@ You would then [construct your signature](/construction.md) for the entire batch
 ```
 http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&signature=912ec803b2ce49e4a541068d495ab570
 ```
-
-Note that you can also pass your `request[]` parameters in as POST data if your URL gets too long.
 
 ## Remarks
 

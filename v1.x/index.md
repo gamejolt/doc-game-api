@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Calls to the system are done over HTTP, so nothing special is needed, and you can test the service using a normal web browser.
+Calls to the system are done over HTTP or HTTPS, so nothing special is needed, and you can test the service using a normal web browser.
 
 ## Namespaces
 
@@ -11,11 +11,12 @@ These are the features currently supported by the API:
 Namespace | Description
 --- | ---
 [**Data-store**](/data-store/index.md) | Manipulate items in a cloud-based data storage.
-[**Get Time**](/time/index.md) | Get the server's time.
+[**Time**](/time/index.md) | Get the server's time.
 [**Scores**](/scores/index.md) | Manipulate scores on score tables.
 [**Sessions**](/sessions/index.md) | Set up sessions for your game.
 [**Trophies**](/trophies/index.md) | Manage trophies for your game.
 [**Users**](/users/index.md) | Access user-based features.
+[**Friends**](/friends/index.md) | List a user's friends.
 [**Batch**](/batch/index.md) | Merge multiple API calls into one request.
 
 ## Constructing Requests
