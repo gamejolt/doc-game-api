@@ -1,164 +1,196 @@
 [
-  {
-    "title": "Overview",
-    "url": "",
-    "nav": [
-      {
-        "title": "URL Construction",
-        "url": "/construction"
-      },
-      {
-        "title": "Version History",
-        "url": "/version-history"
-      }
-    ]
-  },
-  {
-    "title": "Data Formats",
-    "url": "/formats",
-    "nav": [
-      {
-        "title": "JSON",
-        "url": "/formats/json"
-      },
-      {
-        "title": "Keypair",
-        "url": "/formats/keypair"
-      },
-      {
-        "title": "XML",
-        "url": "/formats/xml"
-      },
-      {
-        "title": "Dump",
-        "url": "/formats/dump"
-      }
-    ]
-  },
-  {
-    "title": "Users",
-    "url": "/users",
-    "nav": [
-      {
-        "title": "/fetch",
-        "url": "/users/fetch"
-      },
-      {
-        "title": "/auth",
-        "url": "/users/auth"
-      }
-    ]
-  },
-  {
-    "title": "Sessions",
-    "url": "/sessions",
-    "nav": [
-      {
-        "title": "/open",
-        "url": "/sessions/open"
-      },
-      {
-        "title": "/ping",
-        "url": "/sessions/ping"
-      },
-      {
-        "title": "/check",
-        "url": "/sessions/check"
-      },
-      {
-        "title": "/close",
-        "url": "/sessions/close"
-      }
-    ]
-  },
-  {
-    "title": "Scores",
-    "url": "/scores",
-    "nav": [
-      {
-        "title": "/fetch",
-        "url": "/scores/fetch"
-      },
-      {
-        "title": "/tables",
-        "url": "/scores/tables"
-      },
-      {
-        "title": "/add",
-        "url": "/scores/add"
-      },
-      {
-        "title": "/get-rank",
-        "url": "/scores/get-rank"
-      }
-    ]
-  },
-  {
-    "title": "Trophies",
-    "url": "/trophies",
-    "nav": [
-      {
-        "title": "/fetch",
-        "url": "/trophies/fetch"
-      },
-      {
-        "title": "/set-achieved",
-        "url": "/trophies/set-achieved"
-      },
-      {
-        "title": "/remove-achieved",
-        "url": "/trophies/remove-achieved"
-      }
-    ]
-  },
-  {
-    "title": "Data Storage",
-    "url": "/data-store",
-    "nav": [
-      {
-        "title": "/set",
-        "url": "/data-store/set"
-      },
-      {
-        "title": "/update",
-        "url": "/data-store/update"
-      },
-      {
-        "title": "/remove",
-        "url": "/data-store/remove"
-      },
-      {
-        "title": "/fetch",
-        "url": "/data-store/fetch"
-      },
-      {
-        "title": "/get-keys",
-        "url": "/data-store/get-keys"
-      }
-    ]
-  },
-  {
-    "title": "Friends",
-    "url": "/friends",
-    "nav": [
-      {
-        "title": "/friends",
-        "url": "/friends/fetch"
-      }
-    ]
-  },
-  {
-    "title": "Time",
-    "url": "/time",
-    "nav": [
-      {
-        "title": "/time",
-        "url": "/time/fetch"
-      }
-    ]
-  },
-  {
-    "title": "Batch Calls",
-    "url": "/batch"
-  }
+	{
+		"title": "Overview",
+		"url": "",
+		"nav": [
+			{
+				"title": "URL Construction",
+				"url": "/construction"
+			},
+			{
+				"title": "Version History",
+				"url": "/version-history"
+			}
+		]
+	},
+	{
+		"title": "Data Formats",
+		"url": "/formats",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/formats"
+			},
+			{
+				"title": "JSON",
+				"url": "/formats/json"
+			},
+			{
+				"title": "Keypair",
+				"url": "/formats/keypair"
+			},
+			{
+				"title": "XML",
+				"url": "/formats/xml"
+			},
+			{
+				"title": "Dump",
+				"url": "/formats/dump"
+			}
+		]
+	},
+	{
+		"title": "Users",
+		"url": "/users",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/users"
+			},
+			{
+				"title": "/fetch",
+				"url": "/users/fetch"
+			},
+			{
+				"title": "/auth",
+				"url": "/users/auth"
+			}
+		]
+	},
+	{
+		"title": "Sessions",
+		"url": "/sessions",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/sessions"
+			},
+			{
+				"title": "/open",
+				"url": "/sessions/open"
+			},
+			{
+				"title": "/ping",
+				"url": "/sessions/ping"
+			},
+			{
+				"title": "/check",
+				"url": "/sessions/check"
+			},
+			{
+				"title": "/close",
+				"url": "/sessions/close"
+			}
+		]
+	},
+	{
+		"title": "Scores",
+		"url": "/scores",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/scores"
+			},
+			{
+				"title": "/fetch",
+				"url": "/scores/fetch"
+			},
+			{
+				"title": "/tables",
+				"url": "/scores/tables"
+			},
+			{
+				"title": "/add",
+				"url": "/scores/add"
+			},
+			{
+				"title": "/get-rank",
+				"url": "/scores/get-rank"
+			}
+		]
+	},
+	{
+		"title": "Trophies",
+		"url": "/trophies",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/trophies"
+			},
+			{
+				"title": "/fetch",
+				"url": "/trophies/fetch"
+			},
+			{
+				"title": "/set-achieved",
+				"url": "/trophies/set-achieved"
+			},
+			{
+				"title": "/remove-achieved",
+				"url": "/trophies/remove-achieved"
+			}
+		]
+	},
+	{
+		"title": "Data Storage",
+		"url": "/data-store",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/data-store"
+			},
+			{
+				"title": "/set",
+				"url": "/data-store/set"
+			},
+			{
+				"title": "/update",
+				"url": "/data-store/update"
+			},
+			{
+				"title": "/remove",
+				"url": "/data-store/remove"
+			},
+			{
+				"title": "/fetch",
+				"url": "/data-store/fetch"
+			},
+			{
+				"title": "/get-keys",
+				"url": "/data-store/get-keys"
+			}
+		]
+	},
+	{
+		"title": "Friends",
+		"url": "/friends",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/friends"
+			},
+			{
+				"title": "/friends",
+				"url": "/friends/fetch"
+			}
+		]
+	},
+	{
+		"title": "Time",
+		"url": "/time",
+		"nav": [
+			{
+				"title": "Overview",
+				"url": "/time"
+			},
+			{
+				"title": "/time",
+				"url": "/time/fetch"
+			}
+		]
+	},
+	{
+		"title": "Batch Calls",
+		"url": "/batch"
+	}
 ]

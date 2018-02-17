@@ -12,25 +12,25 @@ With multiple formatting and sorting options, the system is quite flexible. You 
 
 ## Requests
 
-Name | Description
---- | ---
-[**Add**](/scores/add.md) | Adds a score.
-[**Get Rank**](/scores/get-rank.md) | Gets a rank for a specific score.
-[**Fetch**](/scores/fetch.md) | Fetches scores from a score table.
-[**Tables**](/scores/tables.md) | Fetches a list of score tables.
+| Name                                                              | Description                        |
+| ----------------------------------------------------------------- | ---------------------------------- |
+| [**Add**](https://gamejolt.com/game-api/doc/scores/add)           | Adds a score.                      |
+| [**Get Rank**](https://gamejolt.com/game-api/doc/scores/get-rank) | Gets a rank for a specific score.  |
+| [**Fetch**](https://gamejolt.com/game-api/doc/scores/fetch)       | Fetches scores from a score table. |
+| [**Tables**](https://gamejolt.com/game-api/doc/scores/tables)     | Fetches a list of score tables.    |
 
 ## Example Uses
 
-- Highscore tables for each level of a game.
-- Global ranking list for all players.
+* Highscore tables for each level of a game.
+* Global ranking list for all players.
 
 ## Remarks
 
-- Extra data you include is not shown anywhere on the site, and you are limited only by your own imagination!
+* Extra data you include is not shown anywhere on the site, and you are limited only by your own imagination!
 
 ## Version history
 
-Version | Description
---- | ---
-1.2 | Implemented the `Get Rank` request.
-1.0 | First implementation
+| Version | Description                         |
+| ------- | ----------------------------------- |
+| 1.2     | Implemented the `Get Rank` request. |
+| 1.0     | First implementation                |

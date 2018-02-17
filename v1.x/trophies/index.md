@@ -16,17 +16,17 @@ You can also tag trophies on the site as "secret". A sercet trophy's image and d
 
 ## Requests
 
-Name | Description
---- | ---
-[**Fetch**](/trophies/fetch.md) | Fetches trophies with various attributes.
-[**Set Achieved**](/trophies/set-achieved.md) | Sets whether a user achieved a trophy.
+| Name                                                                        | Description                               |
+| --------------------------------------------------------------------------- | ----------------------------------------- |
+| [**Fetch**](https://gamejolt.com/game-api/doc/trophies/fetch)               | Fetches trophies with various attributes. |
+| [**Set Achieved**](https://gamejolt.com/game-api/doc/trophies/set-achieved) | Sets whether a user achieved a trophy.    |
 
 ## Remarks
 
-- You can manage trophies for your game from your game's dashboard.
+* You can manage trophies for your game from your game's dashboard.
 
 ## Version history
 
-Version | Description
---- | ---
-1.0 | First implementation
+| Version | Description          |
+| ------- | -------------------- |
+| 1.0     | First implementation |

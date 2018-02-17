@@ -2,7 +2,6 @@
 
 A batch request is a collection of sub-requests that enables developers to send multiple API calls with one HTTP request.
 
-
 ## URL Endpoint
 
 ```
@@ -11,19 +10,19 @@ A batch request is a collection of sub-requests that enables developers to send 
 
 ## Parameters
 
-Name | Required? | Type | Description
---- | --- | --- | ---
-`game_id` | Yes | `string` | The ID of your game.
-`parallel` | No | `boolean` | By default, each sub-request is processed on the servers sequentially. If this is set to `true`, then all sub-requests are processed at the same time, without waiting for the previous sub-request to finish before the next one is started.
-`break_on_error` | No | `boolean` | If this is set to `true`, one sub-request failure will cause the entire batch to stop processing subsequent sub-requests and return a value of `false` for `success`.
-`requests[]` | Yes | `string[]` | An array of sub-request URLs. Each request will be executed and the responses of each one will be returned in the payload. You must URL-encode each sub-request.
+| Name             | Required? | Type       | Description                                                                                                                                                                                                                                   |
+| ---------------- | --------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `game_id`        | Yes       | `string`   | The ID of your game.                                                                                                                                                                                                                          |
+| `parallel`       | No        | `boolean`  | By default, each sub-request is processed on the servers sequentially. If this is set to `true`, then all sub-requests are processed at the same time, without waiting for the previous sub-request to finish before the next one is started. |
+| `break_on_error` | No        | `boolean`  | If this is set to `true`, one sub-request failure will cause the entire batch to stop processing subsequent sub-requests and return a value of `false` for `success`.                                                                         |
+| `requests[]`     | Yes       | `string[]` | An array of sub-request URLs. Each request will be executed and the responses of each one will be returned in the payload. You must URL-encode each sub-request.                                                                              |
 
 ## Returns
 
-Name | Type | Description
---- | --- | ---
-`success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`
-`message` | `string` | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.`
+| Name      | Type      | Description                                                                                                           |
+| --------- | --------- | --------------------------------------------------------------------------------------------------------------------- |
+| `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`                                                     |
+| `message` | `string`  | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.` |
 
 ### Sub-Request Construction
 
@@ -32,6 +31,7 @@ When making a batch call, you pass in multiple sub-requests in one request. This
 To start, you must construct each sub-request. After that, you'll package each sub-request into the main batch API call.
 
 One sub-request would look similar to this:
+
 ```
 /data-store/?game_id=32&key=test&signature=912ec803b2ce49e4a541068d495ab570
 ```
@@ -70,7 +70,6 @@ Multiple sub-request parameters joined together would look like this:
 requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570
 ```
 
-
 #### Main URL Construction
 
 After you have your list of sub-requests, you need to attach it to a batch URL request. That would look like this:
@@ -79,7 +78,7 @@ After you have your list of sub-requests, you need to attach it to a batch URL r
 http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570
 ```
 
-You would then [construct your signature](/construction.md) for the entire batch call like normal. After constructing the signature for the batch call, your final URL would be:
+You would then [construct your signature](https://gamejolt.com/game-api/doc/construction) for the entire batch call like normal. After constructing the signature for the batch call, your final URL would be:
 
 ```
 http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&requests[]=%2Fdata-store%2F%3Fgame_id%3D32%26key%3Dtest%26signature%3D912ec803b2ce49e4a541068d495ab570&signature=912ec803b2ce49e4a541068d495ab570
@@ -87,11 +86,10 @@ http://api.gamejolt.com/api/game/v1_1/batch?game_id=456&requests[]=%2Fdata-store
 
 ## Remarks
 
-- The maximum amount of sub requests in one batch request is 50.
-- [Dump format](/formats/dump.md) is not supported in batch calls.
-- The `parallel` and `break_on_error` parameters cannot be used in the same request.
-- For more information on how to use the batch request, visit the [Construction](/construction.md) page.
-
+* The maximum amount of sub requests in one batch request is 50.
+* [Dump format](https://gamejolt.com/game-api/doc/formats/dump) is not supported in batch calls.
+* The `parallel` and `break_on_error` parameters cannot be used in the same request.
+* For more information on how to use the batch request, visit the [Construction](https://gamejolt.com/game-api/doc/construction) page.
 
 ### `break_on_error` Parameter
 
@@ -113,6 +111,6 @@ By default, sub-requests in a batch call are processed in sequence. If your sub-
 
 ## Version history
 
-Version | Description
---- | ---
-1.2 | First implementation
+| Version | Description          |
+| ------- | -------------------- |
+| 1.2     | First implementation |
