@@ -10,9 +10,9 @@ Put the main URL endpoint for all requests here.
 
 ## Requests
 
-| Name                         | Description       |
-| ---------------------------- | ----------------- |
-| **[Endpoint](/api/doc/url)** | short description |
+| Name                                                  | Description       |
+| ----------------------------------------------------- | ----------------- |
+| **[Endpoint](https://gamejolt.com/game-api/doc/url)** | short description |
 
 ## Example uses (optional)
 

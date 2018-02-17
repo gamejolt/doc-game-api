@@ -30,7 +30,7 @@ With multiple formatting and sorting options, the system is quite flexible. You 
 
 ## Version history
 
-| Version | Description                         |
-| ------- | ----------------------------------- |
-| 1.2     | Implemented the `Get Rank` request. |
-| 1.0     | First implementation                |
+| Version | Description                   |
+| ------- | ----------------------------- |
+| 1.2     | Added the `Get Rank` endpoint |
+| 1.0     | First implementation          |

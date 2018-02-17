@@ -26,16 +26,9 @@ Sessions are used to tell Game Jolt when a user is playing a game, and what stat
 
 Sessions are currently only shown to other users in Public Chat. In the near future, this data will become more visible on the site. For example:
 
-- [Sessions](#sessions)
-	- [URL Endpoint](#url-endpoint)
-	- [Requests](#requests)
-	- [Example Uses](#example-uses)
-	- [Remarks](#remarks)
-	- [Version history](#version-history)
-
 ## Version history
 
-| Version | Description                   |
-| ------- | ----------------------------- |
-| 1.2     | Added user tracking features. |
-| 1.0     | First implementation          |
+| Version | Description                        |
+| ------- | ---------------------------------- |
+| 1.2     | Added the `Session Check` endpoint |
+| 1.0     | First implementation               |

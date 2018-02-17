@@ -10,9 +10,9 @@ A namespace to get information about users friends on Game Jolt
 
 ## Requests
 
-| Name                             | Description             |
-| -------------------------------- | ----------------------- |
-| [**Friends**](/friends/fetch.md) | Lists a user's friends. |
+| Name                                                              | Description             |
+| ----------------------------------------------------------------- | ----------------------- |
+| [**Friends**](https://gamejolt.com/game-api/doc/friends/fetch.md) | Lists a user's friends. |
 
 ## Example Uses
 

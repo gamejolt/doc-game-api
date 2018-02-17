@@ -32,7 +32,7 @@ Returns the time of the Game Jolt server.
 ## Syntax
 
 ```
-/get-time/?game_id=xxxxx
+/time/?game_id=xxxxx
 ```
 
 ## Version history

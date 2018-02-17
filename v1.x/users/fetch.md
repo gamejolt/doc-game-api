@@ -49,9 +49,7 @@ Returns a user's data.
 
 ## Version history
 
-| Version | Description                                                |
-| ------- | ---------------------------------------------------------- |
-| 1.0     | First implementation                                       |
-| 1.2     | Added _signed_up_timestamp_ and _last_logged_in_timestamp_ |
-
-The `developer_*` fields are available for all users, not just developers.
+| Version | Description                                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.0     | First implementation                                                                                                                       |
+| 1.2     | Added _signed_up_timestamp_ and _last_logged_in_timestamp_. <br>The `developer_*` fields are available for all users, not just developers. |

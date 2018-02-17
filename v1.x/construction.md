@@ -57,26 +57,26 @@ http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_to
 Next, add the Private Key of your game (found under "Manage Achievements" on the game dashboard) to the end of the URL like so:
 
 ```
-http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_token=123456&achieved=true912ec803b2ce49e4a541068d495ab570
+http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_token=123456&achieved=truemy_awesome_private_key
 ```
 
 Pump this string through either `MD5` or `SHA-1` and you have successfully generated a signature.
 
 ```
-3208fde0470719372f8313ddd5884a75
+fc3e8e0ea54544b3551058f0cf524303
 ```
 
 To finish up, add the signature to the original request URL.
 
 ```
-http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_token=123456&achieved=true&signature=3208fde0470719372f8313ddd5884a75
+http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&user_token=123456&achieved=true&signature=fc3e8e0ea54544b3551058f0cf524303
 ```
 
 ### Using POST data
 
-Most endpoints support submitting the variables in the POST data instead of GET query parameters.
+All endpoints support submitting the variables in the POST data instead of GET query parameters.
 
-This is convenient for many libraries and allows you to send longer requests which is especially useful with [/batch/](/batch/index.md) requests. Variables must not appear in both the GET and POST data in the same request.
+This is convenient for many libraries and allows you to send longer requests which is especially useful with [/batch/](/batch/index.md) requests.
 
 The signature needs to be created differently when there is POST data.
 We'll use a request to fetch the achieved trophies where the `achieved` and `user_token` variables are in the POST data as an example:
@@ -106,17 +106,46 @@ achievedtrueuser_token123456
 Next, add the post data and the private key of your game to the end of the URL like so:
 
 ```
-http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROSachievedtrueuser_token123456912ec803b2ce49e4a541068d495ab570
+http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROSachievedtrueuser_token123456my_awesome_private_key
 ```
 
 Pump this string through either `MD5` or `SHA-1` and the signature is:
 
 ```
-038f7372a291c756494e6ad2d3db2bd7
+d1eefdaaa2cb35ee3ceac5ce11079c89
 ```
 
 Lastly, add the signature to the original request URL and send it with the POST data:
 
 ```
-http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&signature=038f7372a291c756494e6ad2d3db2bd7
+http://api.gamejolt.com/api/game/v1_2/trophies/?game_id=32&username=CROS&signature=d1eefdaaa2cb35ee3ceac5ce11079c89
+```
+
+### Arrays in POST Data
+
+Some endpoints may have arrays in the post data, like the [/batch](https://gamejolt.com/game-api/doc/batch) `requests[]` field. To make a signature for them, you would concatenate the key name with each one of the array values.
+
+For example, when trying to make a signature for this:
+
+```
+curl -XGET 'http://api.gamejolt.com/api/game/v1_2/batch/?game_id=32&username=CROS' -d '
+{
+    requests: [
+      'abc',
+      'def',
+      'ghi',
+    ]
+}'
+```
+
+The post data to sign would become `requestsabcrequestsdefrequestsghi`, so the full url to sign would be:
+
+```
+http://api.gamejolt.com/api/game/v1_2/batch/?game_id=32&username=CROSrequestsabcrequestsdefrequestsghimy_awesome_private_key
+```
+
+To which the signature is:
+
+```
+d1387db85719d80afae538c5d5bca040
 ```

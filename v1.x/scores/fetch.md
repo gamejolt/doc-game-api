@@ -55,5 +55,5 @@ All values below will get returned for every score that gets returned. They can 
 
 | Version | Description              |
 | ------- | ------------------------ |
-| 1.0     | First implementation     |
 | 1.2     | Added _stored_timestamp_ |
+| 1.0     | First implementation     |
