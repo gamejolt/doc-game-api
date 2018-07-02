@@ -22,14 +22,14 @@ Namespace | Description
 
 Every request consists of multiple parts.
 
-This page shows you how to construct API requests: [Constructing Requests](https://gamejolt.com/game-api/doc/game-api/doc/construction)
+This page shows you how to construct API requests: [Constructing Requests](https://gamejolt.com/game-api/doc/construction)
 
 ## Multiple Formats
 
 Requests can be sent in four different formats.
 
-Check the [Formats](https://gamejolt.com/game-api/doc/game-api/doc/formats) page for more.
+Check the [Formats](https://gamejolt.com/game-api/doc/formats) page for more.
 
 ## Version history
 
-These are the changes made to version 1.2 of the API: [__Version History__](https://gamejolt.com/game-api/doc/game-api/doc/version-history).
+These are the changes made to version 1.2 of the API: [__Version History__](https://gamejolt.com/game-api/doc/version-history).
