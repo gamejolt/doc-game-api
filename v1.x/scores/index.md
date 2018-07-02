@@ -32,5 +32,5 @@ Name | Description
 
 Version | Description
 --- | ---
-1.2 | Implemented the `Get Rank` request.
+1.2 | Implemented the `Get Rank` request<br>Added `better_than` and `worse_than` to the `Fetch` request
 1.0 | First implementation

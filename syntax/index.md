@@ -12,7 +12,7 @@ Put the main URL endpoint for all requests here.
 
 Name | Description
 --- | ---
-__[Endpoint](/api/doc/url)__ | short description
+__[Endpoint](https://gamejolt.com/game-api/doc/url)__ | short description
 
 ## Example uses (optional)
 

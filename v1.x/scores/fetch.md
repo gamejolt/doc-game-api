@@ -17,6 +17,8 @@ Name | Required? | Type | Description
 `table_id` | No | `integer` | The ID of the score table.
 `username` | No | `string` | The user's username.
 `user_token` | No | `string` | The user's token.
+`better_than` | No | `integer` | Fetch only scores better than this one.
+`worse_than` | No | `integer` | Fetch only scores worse than this one.
 
 ## Returns
 
@@ -43,6 +45,7 @@ Name | Type | Description
 - The default value for `limit` is `10` scores. The maximum amount of scores you can retrieve is `100`.
 - If `table_id` is left blank, the scores from the primary score table will be returned.
 - Only pass in the `username` and `user_token` if you would like to retrieve scores for just that user. Leave the user information blank to retrieve all scores.
+- Scores are returned in the order of the score table's sorting direction. e.g. for descending tables the bigger scores are returned first.
 
 ## Syntax
 
@@ -56,4 +59,4 @@ Name | Type | Description
 Version | Description
 --- | ---
 1.0 | First implementation
-1.2 | Added _stored_timestamp_
+1.2 | Added `stored_timestamp` result field<br>Added `better_than` and `worse_than` parameters
