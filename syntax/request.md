@@ -10,15 +10,15 @@ URL
 
 ## Parameters
 
-Name | Required? | Type | Description
---- | --- | --- | ---
-`parameter_name` | Yes/No | `type` | Description
+| Name             | Required? | Type   | Description |
+| ---------------- | --------- | ------ | ----------- |
+| `parameter_name` | Yes/No    | `type` | Description |
 
 ## Returns
 
-Name | Type | Description
---- | --- | ---
-`field_name` | `type` | Description <br> **Example**: `example text`
+| Name         | Type   | Description                                  |
+| ------------ | ------ | -------------------------------------------- |
+| `field_name` | `type` | Description <br> **Example**: `example text` |
 
 ## Remarks
 
@@ -32,7 +32,7 @@ Some notes here.
 
 ## Version history
 
-Version | Description
---- | ---
-1.2 | Added more derp
-1.0 | First implementation
+| Version | Description          |
+| ------- | -------------------- |
+| 1.2     | Added more derp      |
+| 1.0     | First implementation |
