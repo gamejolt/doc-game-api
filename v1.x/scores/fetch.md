@@ -10,15 +10,15 @@ Returns a list of scores either for a user or globally for a game.
 
 ## Parameters
 
-| Name          | Required? | Type      | Description                                |
-| ------------- | --------- | --------- | ------------------------------------------ |
-| `game_id`     | Yes       | `string`  | The ID of your game.                       |
-| `limit`       | No        | `integer` | The number of scores you'd like to return. |
-| `table_id`    | No        | `integer` | The ID of the score table.                 |
-| `username`    | No        | `string`  | The user's username.                       |
-| `user_token`  | No        | `string`  | The user's token.                          |
-| `better_than` | No        | `integer` | Fetch only scores better than this one.    |
-| `worse_than`  | No        | `integer` | Fetch only scores worse than this one.     |
+| Name          | Required? | Type      | Description                                          |
+| ------------- | --------- | --------- | ---------------------------------------------------- |
+| `game_id`     | Yes       | `string`  | The ID of your game.                                 |
+| `limit`       | No        | `integer` | The number of scores you'd like to return.           |
+| `table_id`    | No        | `integer` | The ID of the score table.                           |
+| `username`    | No        | `string`  | The user's username.                                 |
+| `user_token`  | No        | `string`  | The user's token.                                    |
+| `better_than` | No        | `integer` | Fetch only scores better than this score sort value. |
+| `worse_than`  | No        | `integer` | Fetch only scores worse than this score sort value.  |
 
 ## Returns
 
