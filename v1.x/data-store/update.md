@@ -41,7 +41,9 @@ Updates data in the data store.
 ## Remarks
 
 * You can only perform mathematic operations on numerical data.
-* If you pass in the user information, this function will return all the keys in a user's data store. If you leave the user information empty, it will return all the keys in the game's global data store.
+* If you pass in the user information, this function will return all the keys in a user's data
+	store. If you leave the user information empty, it will return all the keys in the game's global
+	data store.
 
 ## Syntax
 

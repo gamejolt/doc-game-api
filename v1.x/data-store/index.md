@@ -1,6 +1,7 @@
 # Data Store
 
-A cloud-based data storage system. It's completely up to you what you use this for. The more inventive the better!
+A cloud-based data storage system. It's completely up to you what you use this for. The more
+inventive the better!
 
 ## URL Endpoint
 

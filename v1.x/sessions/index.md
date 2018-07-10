@@ -1,6 +1,7 @@
 # Sessions
 
-Sessions are used to tell Game Jolt when a user is playing a game, and what state they are in while playing (active or idle).
+Sessions are used to tell Game Jolt when a user is playing a game, and what state they are in while
+playing (active or idle).
 
 ## URL Endpoint
 
@@ -24,11 +25,16 @@ Sessions are used to tell Game Jolt when a user is playing a game, and what stat
 
 ## Remarks
 
-Sessions are currently only shown to other users in Public Chat. In the near future, this data will become more visible on the site. For example:
+Sessions are currently only shown to other users in Public Chat. In the near future, this data will
+become more visible on the site. For example:
+
+* Sessions will be shown as live to friends.
+* Gamers will be able to see which games they (and their friends) have played and for how long.
+* Developers will be able to see the total play time of their games.
 
 ## Version history
 
-| Version | Description                        |
-| ------- | ---------------------------------- |
-| 1.2     | Added the `Session Check` endpoint |
-| 1.0     | First implementation               |
+| Version | Description                                                         |
+| ------- | ------------------------------------------------------------------- |
+| 1.2     | Added user tracking features.<br>Added the `Session Check` endpoint |
+| 1.0     | First implementation                                                |

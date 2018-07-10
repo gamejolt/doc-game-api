@@ -27,7 +27,8 @@ Returns data from the data store.
 
 ## Remarks
 
-* If you pass in the user information, the data item will be fetched for a user. If you leave the user information empty, it will be fetched globally for the game.
+* If you pass in the user information, the data item will be fetched for a user. If you leave the
+	user information empty, it will be fetched globally for the game.
 * We suggest using the `dump` format for returning data from this call.
 
 ## Syntax

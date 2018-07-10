@@ -1,9 +1,7 @@
-[
-	{
+[{
 		"title": "Overview",
 		"url": "",
-		"nav": [
-			{
+		"nav": [{
 				"title": "URL Construction",
 				"url": "/construction"
 			},
@@ -16,8 +14,7 @@
 	{
 		"title": "Data Formats",
 		"url": "/formats",
-		"nav": [
-			{
+		"nav": [{
 				"title": "Overview",
 				"url": "/formats"
 			},
@@ -42,8 +39,7 @@
 	{
 		"title": "Users",
 		"url": "/users",
-		"nav": [
-			{
+		"nav": [{
 				"title": "Overview",
 				"url": "/users"
 			},
@@ -60,8 +56,7 @@
 	{
 		"title": "Sessions",
 		"url": "/sessions",
-		"nav": [
-			{
+		"nav": [{
 				"title": "Overview",
 				"url": "/sessions"
 			},
@@ -86,8 +81,7 @@
 	{
 		"title": "Scores",
 		"url": "/scores",
-		"nav": [
-			{
+		"nav": [{
 				"title": "Overview",
 				"url": "/scores"
 			},
@@ -112,8 +106,7 @@
 	{
 		"title": "Trophies",
 		"url": "/trophies",
-		"nav": [
-			{
+		"nav": [{
 				"title": "Overview",
 				"url": "/trophies"
 			},
@@ -134,8 +127,7 @@
 	{
 		"title": "Data Storage",
 		"url": "/data-store",
-		"nav": [
-			{
+		"nav": [{
 				"title": "Overview",
 				"url": "/data-store"
 			},
@@ -178,8 +170,7 @@
 	{
 		"title": "Time",
 		"url": "/time",
-		"nav": [
-			{
+		"nav": [{
 				"title": "Overview",
 				"url": "/time"
 			},

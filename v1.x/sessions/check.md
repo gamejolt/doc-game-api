@@ -1,6 +1,7 @@
 # Sessions - Check
 
-Checks to see if there is an open session for the user. Can be used to see if a particular user account is active in the game.
+Checks to see if there is an open session for the user. Can be used to see if a particular user
+account is active in the game.
 
 ## URL Endpoint
 

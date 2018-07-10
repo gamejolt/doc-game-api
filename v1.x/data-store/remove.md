@@ -26,7 +26,8 @@ Removes data from the data store.
 
 ## Remarks
 
-* If you pass in the user information, the item will be removed from a user's data store. If you leave the user information empty, it will be removed from the game's global data store.
+* If you pass in the user information, the item will be removed from a user's data store. If you
+	leave the user information empty, it will be removed from the game's global data store.
 
 ## Syntax
 

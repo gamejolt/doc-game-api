@@ -1,2 +1,1 @@
-gj-doc-game-api
-===============
+# gj-doc-game-api

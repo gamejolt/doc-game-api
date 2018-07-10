@@ -27,7 +27,8 @@ Returns the rank of a particular score on a score table.
 ## Remarks
 
 * If `table_id` is left blank, the ranks from the primary high score table will be returned.
-* If the score is not represented by any rank on the score table, the request will return the rank that is closest to the requested score.
+* If the score is not represented by any rank on the score table, the request will return the rank
+	that is closest to the requested score.
 
 ## Syntax
 

@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Calls to the system are done over HTTP or HTTPS, so nothing special is needed, and you can test the service using a normal web browser.
+Calls to the system are done over HTTP or HTTPS, so nothing special is needed, and you can test the service
+using a normal web browser.
 
 ## Namespaces
 
@@ -16,21 +17,23 @@ These are the features currently supported by the API:
 | [**Sessions**](https://gamejolt.com/game-api/doc/sessions)     | Set up sessions for your game.                  |
 | [**Trophies**](https://gamejolt.com/game-api/doc/trophies)     | Manage trophies for your game.                  |
 | [**Users**](https://gamejolt.com/game-api/doc/users)           | Access user-based features.                     |
-| [**Friends**](/friends/index.md)                               | List a user's friends.                          |
+| [**Friends**](https://gamejolt.com/game-api/doc/friends)       | List a user's friends.                          |
 | [**Batch**](https://gamejolt.com/game-api/doc/batch)           | Merge multiple API calls into one request.      |
 
 ## Constructing Requests
 
 Every request consists of multiple parts.
 
-This page shows you how to construct API requests: [Constructing Requests](https://gamejolt.com/game-api/doc/game-api/doc/construction)
+This page shows you how to construct API requests:
+[Constructing Requests](https://gamejolt.com/game-api/doc/construction)
 
 ## Multiple Formats
 
 Requests can be sent in four different formats.
 
-Check the [Formats](https://gamejolt.com/game-api/doc/game-api/doc/formats) page for more.
+Check the [Formats](https://gamejolt.com/game-api/doc/formats) page for more.
 
 ## Version history
 
-These are the changes made to version 1.2 of the API: [**Version History**](https://gamejolt.com/game-api/doc/game-api/doc/version-history).
+These are the changes made to version 1.2 of the API:
+[**Version History**](https://gamejolt.com/game-api/doc/version-history).

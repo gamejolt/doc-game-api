@@ -21,7 +21,8 @@ Returns a list of high score tables for a game.
 | `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`                                                     |
 | `message` | `string`  | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.` |
 
-All values below will get returned for every score table that gets returned. They can occur multiple times.
+All values below will get returned for every score table that gets returned. They can occur multiple
+times.
 
 | Name          | Type      | Description                                                                                                                    |
 | ------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------ |

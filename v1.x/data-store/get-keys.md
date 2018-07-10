@@ -27,9 +27,13 @@ Returns either all the keys in the game's global data store, or all the keys in 
 
 ## Remarks
 
-* If you apply a pattern to the request, only keys with applicable key names will be returned. The placeholder character for patterns is `*`.
-* If you pass in the user information, this function will return all the keys in a user's data store. If you leave the user information empty, it will return all the keys in the game's global data store.
-* This request will return a list of the `key` values. The `key` return value can appear more than once.
+* If you apply a pattern to the request, only keys with applicable key names will be returned. The
+	placeholder character for patterns is `*`.
+* If you pass in the user information, this function will return all the keys in a user's data
+	store. If you leave the user information empty, it will return all the keys in the game's global
+	data store.
+* This request will return a list of the `key` values. The `key` return value can appear more than
+	once.
 
 ## Syntax
 

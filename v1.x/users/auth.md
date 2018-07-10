@@ -1,6 +1,7 @@
 # Users - Auth
 
-Authenticates the user's information. This should be done before you make any calls for the user, to make sure the user's credentials (username and token) are valid.
+Authenticates the user's information. This should be done before you make any calls for the user, to
+make sure the user's credentials (username and token) are valid.
 
 ## URL Endpoint
 

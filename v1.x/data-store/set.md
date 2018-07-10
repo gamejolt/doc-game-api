@@ -10,13 +10,13 @@ Sets data in the data store.
 
 ## Parameters
 
-| Name       | Required? | Type     | Description                                                    |
-| ---------- | --------- | -------- | -------------------------------------------------------------- |
-| game_id    | Yes       | `string` | The ID of your game.                                           |
-| key        | Yes       | `string` | The key of the data item you'd like to set.                    |
-| data       | Yes       | `string` | The data you'd like to set. Note that this should be a string. |
-| username   | No        | `string` | The user's username.                                           |
-| user_token | No        | `string` | The user's token.                                              |
+| Name       | Required? | Type     | Description                                 |
+| ---------- | --------- | -------- | ------------------------------------------- |
+| game_id    | Yes       | `string` | The ID of your game.                        |
+| key        | Yes       | `string` | The key of the data item you'd like to set. |
+| data       | Yes       | `string` | The data you'd like to set.                 |
+| username   | No        | `string` | The user's username.                        |
+| user_token | No        | `string` | The user's token.                           |
 
 ## Returns
 
@@ -27,8 +27,10 @@ Sets data in the data store.
 
 ## Remarks
 
-* If you pass in the user information, this item will be removed from a user's data store. If you leave the user information empty, it will be removed from the game's global data store.
-* You can create new data store items by passing in a `key` that doesn't yet exist in the data store.
+* If you pass in the user information, this item will be removed from a user's data store. If you
+	leave the user information empty, it will be removed from the game's global data store.
+* You can create new data store items by passing in a `key` that doesn't yet exist in the data
+	store.
 
 ## Syntax
 

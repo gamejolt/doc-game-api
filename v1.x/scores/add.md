@@ -30,8 +30,13 @@ Adds a score for a user or guest.
 
 ## Remarks
 
-* You can either store a score for a user or a guest. If you're storing for a user, you must pass in the `username` and `user_token` parameters. If you're storing for a guest, you must pass in the `guest` parameter.
-* The `extra_data` value is only retrievable through the API and your game's dashboard. It's never displayed publicly to users on the site. If there is other data associated with the score such as time played, coins collected, etc., you should definitely include it. It will be helpful in cases where you believe a gamer has illegitimately achieved a high score.
+* You can either store a score for a user or a guest. If you're storing for a user, you must pass in
+	the `username` and `user_token` parameters. If you're storing for a guest, you must pass in the
+	`guest` parameter.
+* The `extra_data` value is only retrievable through the API and your game's dashboard. It's never
+	displayed publicly to users on the site. If there is other data associated with the score such as
+	time played, coins collected, etc., you should definitely include it. It will be helpful in cases
+	where you believe a gamer has illegitimately achieved a high score.
 * If `table_id` is left blank, the score will be submitted to the primary high score table.
 
 ## Syntax

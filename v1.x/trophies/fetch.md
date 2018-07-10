@@ -25,7 +25,8 @@ Returns one trophy or multiple trophies, depending on the parameters passed in.
 | `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`                                                     |
 | `message` | `string`  | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.` |
 
-All values below will get returned for every trophy that gets returned. They can occur multiple times.
+All values below will get returned for every trophy that gets returned. They can occur multiple
+times.
 
 | Name          | Type                | Description                                                                                                               |
 | ------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |

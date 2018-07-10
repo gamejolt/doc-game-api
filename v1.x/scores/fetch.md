@@ -10,13 +10,15 @@ Returns a list of scores either for a user or globally for a game.
 
 ## Parameters
 
-| Name         | Required? | Type      | Description                                |
-| ------------ | --------- | --------- | ------------------------------------------ |
-| `game_id`    | Yes       | `string`  | The ID of your game.                       |
-| `limit`      | No        | `integer` | The number of scores you'd like to return. |
-| `table_id`   | No        | `integer` | The ID of the score table.                 |
-| `username`   | No        | `string`  | The user's username.                       |
-| `user_token` | No        | `string`  | The user's token.                          |
+| Name          | Required? | Type      | Description                                          |
+| ------------- | --------- | --------- | ---------------------------------------------------- |
+| `game_id`     | Yes       | `string`  | The ID of your game.                                 |
+| `limit`       | No        | `integer` | The number of scores you'd like to return.           |
+| `table_id`    | No        | `integer` | The ID of the score table.                           |
+| `username`    | No        | `string`  | The user's username.                                 |
+| `user_token`  | No        | `string`  | The user's token.                                    |
+| `better_than` | No        | `integer` | Fetch only scores better than this score sort value. |
+| `worse_than`  | No        | `integer` | Fetch only scores worse than this score sort value.  |
 
 ## Returns
 
@@ -25,7 +27,8 @@ Returns a list of scores either for a user or globally for a game.
 | `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`                                                     |
 | `message` | `string`  | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.` |
 
-All values below will get returned for every score that gets returned. They can occur multiple times.
+All values below will get returned for every score that gets returned. They can occur multiple
+times.
 
 | Name               | Type            | Description                                                                                                 |
 | ------------------ | --------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -40,9 +43,13 @@ All values below will get returned for every score that gets returned. They can 
 
 ## Remarks
 
-* The default value for `limit` is `10` scores. The maximum amount of scores you can retrieve is `100`.
+* The default value for `limit` is `10` scores. The maximum amount of scores you can retrieve is
+	`100`.
 * If `table_id` is left blank, the scores from the primary score table will be returned.
-* Only pass in the `username` and `user_token` if you would like to retrieve scores for just that user. Leave the user information blank to retrieve all scores.
+* Only pass in the `username` and `user_token` if you would like to retrieve scores for just that
+	user. Leave the user information blank to retrieve all scores.
+* Scores are returned in the order of the score table's sorting direction. e.g. for descending
+	tables the bigger scores are returned first.
 
 ## Syntax
 
@@ -53,7 +60,7 @@ All values below will get returned for every score that gets returned. They can 
 
 ## Version history
 
-| Version | Description              |
-| ------- | ------------------------ |
-| 1.2     | Added _stored_timestamp_ |
-| 1.0     | First implementation     |
+| Version | Description                                                                              |
+| ------- | ---------------------------------------------------------------------------------------- |
+| 1.2     | Added `stored_timestamp` result field<br>Added `better_than` and `worse_than` parameters |
+| 1.0     | First implementation                                                                     |

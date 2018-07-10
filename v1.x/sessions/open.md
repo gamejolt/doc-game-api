@@ -1,6 +1,8 @@
 # Sessions - Open
 
-Opens a game session for a particular user and allows you to tell Game Jolt that a user is playing your game. You must ping the session to keep it active and you must close it when you're done with it.
+Opens a game session for a particular user and allows you to tell Game Jolt that a user is playing
+your game. You must ping the session to keep it active and you must close it when you're done with
+it.
 
 ## URL Endpoint
 
@@ -25,7 +27,8 @@ Opens a game session for a particular user and allows you to tell Game Jolt that
 
 ## Remarks
 
-* You can only have one open session for a user at a time. If you try to open a new session while one is running, the system will close out the current one before opening the new one.
+* You can only have one open session for a user at a time. If you try to open a new session while
+	one is running, the system will close out the current one before opening the new one.
 
 ## Syntax
 
