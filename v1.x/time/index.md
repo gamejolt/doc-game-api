@@ -10,9 +10,9 @@ A namespace to obtain time information from the Game Jolt server.
 
 ## Requests
 
-| Name                                                         | Description                       |
-| ------------------------------------------------------------ | --------------------------------- |
-| [**Get Time**](https://gamejolt.com/game-api/doc/time/fetch) | Fetches the time from the server. |
+| Name                                                           | Description                       |
+| -------------------------------------------------------------- | --------------------------------- |
+| [**Time Fetch**](https://gamejolt.com/game-api/doc/time/fetch) | Fetches the time from the server. |
 
 ## Example Uses
 
