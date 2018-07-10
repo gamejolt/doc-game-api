@@ -9,8 +9,7 @@ the effort to automatically pass your game the username and token whenever possi
 * Java Applets are automatically passed the the username and token in Applet Parameters.
 * Flash games are automatically passed the username and token in flashvars.
 * It works similarly with Unity Webplayer and Silverlight games.
-* Downloadable games that use Game Jolt's Quick Play system are passed the username and token in
-	both command line arguments and in an automatically generated file: gjapi-credentials.txt.
+* Downloadable games running through the Game Jolt Client are passed the username and token in an automatically generated file: `.gj-credentials`, placed next to the game's executable.
 	Definitely check that out!
 
 ## URL Endpoint

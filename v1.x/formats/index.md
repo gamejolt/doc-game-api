@@ -26,5 +26,5 @@ format.
 ## Example
 
 ```
-http://api.gamejolt.com/api/game/v1/?format=json
+https://api.gamejolt.com/api/game/v1_2/?format=json
 ```

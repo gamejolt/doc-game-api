@@ -1,11 +1,11 @@
-# Get-Time
+# Time
 
 Returns the time of the Game Jolt server.
 
 ## URL Endpoint
 
 ```
-/get-time/
+/time/
 ```
 
 ## Parameters
@@ -27,12 +27,12 @@ Returns the time of the Game Jolt server.
 | `day`       | `integer` | The day of the month. <br> **Example**: `28`                                                                          |
 | `hour`      | `integer` | The hour of the day. <br> **Example**: `12`                                                                           |
 | `minute`    | `integer` | The minute of the hour. <br> **Example**: `30`                                                                        |
-| `seconds`   | `integer` | The seconds of the minute. <br> **Example**: `59`                                                                     |
+| `second`    | `integer` | The seconds of the minute. <br> **Example**: `59`                                                                     |
 
 ## Syntax
 
 ```
-/get-time/?game_id=xxxxx
+/time/?game_id=xxxxx
 ```
 
 ## Version history

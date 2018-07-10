@@ -19,10 +19,11 @@ visible until a gamer has achieved it.
 
 ## Requests
 
-| Name                                                                        | Description                               |
-| --------------------------------------------------------------------------- | ----------------------------------------- |
-| [**Fetch**](https://gamejolt.com/game-api/doc/trophies/fetch)               | Fetches trophies with various attributes. |
-| [**Set Achieved**](https://gamejolt.com/game-api/doc/trophies/set-achieved) | Sets whether a user achieved a trophy.    |
+| Name                                                                              | Description                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------- |
+| [**Fetch**](https://gamejolt.com/game-api/doc/trophies/fetch)                     | Fetches trophies with various attributes. |
+| [**Set Achieved**](https://gamejolt.com/game-api/doc/trophies/set-achieved)       | Sets whether a user achieved a trophy.    |
+| [**Remove Achieved**](https://gamejolt.com/game-api/doc/trophies/remove-achieved) | Removes an achieved trophy.               |
 
 ## Remarks
 
@@ -30,6 +31,7 @@ visible until a gamer has achieved it.
 
 ## Version history
 
-| Version | Description          |
-| ------- | -------------------- |
-| 1.0     | First implementation |
+| Version | Description                          |
+| ------- | ------------------------------------ |
+| 1.2     | Added the `Remove Achieved` endpoint |
+| 1.0     | First implementation                 |

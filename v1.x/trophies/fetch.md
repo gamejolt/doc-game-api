@@ -34,7 +34,7 @@ times.
 | `title`       | `string`            | The title of the trophy on the site. <br> **Example**: `Master Jumper`                                                    |
 | `description` | `string`            | The trophy description text. <br> **Example**: `Achieve 200 jumps.`                                                       |
 | `difficulty`  | `string`            | `Bronze`, `Silver`, `Gold`, or `Platinum` <br> **Example**: `Silver`                                                      |
-| `image_url`   | `string (url)`      | The URL of the trophy's thumbnail image. <br> **Example**: `http://i.gjcdn.net/imgserver/game-trophy/75/1958_1.jpg`       |
+| `image_url`   | `string (url)`      | The URL of the trophy's thumbnail image. <br> **Example**: `https://i.gjcdn.net/imgserver/game-trophy/75/1958_1.jpg`      |
 | `achieved`    | `boolean` or `date` | Date/time when the trophy was achieved by the user, or `false` if they haven't achieved it yet. <br> **Example**: `false` |
 
 ## Syntax

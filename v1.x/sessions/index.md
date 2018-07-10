@@ -34,7 +34,7 @@ become more visible on the site. For example:
 
 ## Version history
 
-| Version | Description                   |
-| ------- | ----------------------------- |
-| 1.2     | Added user tracking features. |
-| 1.0     | First implementation          |
+| Version | Description                                                         |
+| ------- | ------------------------------------------------------------------- |
+| 1.2     | Added user tracking features.<br>Added the `Session Check` endpoint |
+| 1.0     | First implementation                                                |

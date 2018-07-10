@@ -62,5 +62,5 @@ times.
 
 | Version | Description                                                                              |
 | ------- | ---------------------------------------------------------------------------------------- |
-| 1.0     | First implementation                                                                     |
 | 1.2     | Added `stored_timestamp` result field<br>Added `better_than` and `worse_than` parameters |
+| 1.0     | First implementation                                                                     |
