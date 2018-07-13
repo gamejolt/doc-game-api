@@ -1,9 +1,14 @@
 # GameJolt API
 
-## Introduction
+There are many libraries and plugins developed by the community already. Rather than write custom
+code for interfacing with the Game API directly, most developers tend to use one of the already
+written libraries.
 
-Calls to the system are done over HTTP or HTTPS, so nothing special is needed, and you can test the service
-using a normal web browser.
+[View libraries and plugins](https://gamejolt.com/game-api/doc/libraries).
+
+If you do decide to write your own code for calling the Game API directly, then fear not, it's easy!
+Calls to the system are done over HTTP or HTTPS, so nothing special is needed, and you can test the
+service using a normal web browser.
 
 ## Namespaces
 
@@ -25,7 +30,7 @@ These are the features currently supported by the API:
 Every request consists of multiple parts.
 
 This page shows you how to construct API requests:
-[Constructing Requests](https://gamejolt.com/game-api/doc/construction)
+[Constructing Requests](https://gamejolt.com/game-api/doc/construction).
 
 ## Multiple Formats
 
