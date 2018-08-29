@@ -21,8 +21,13 @@ account is active in the game.
 
 | Name      | Type      | Description                                                                                                           |
 | --------- | --------- | --------------------------------------------------------------------------------------------------------------------- |
-| `success` | `boolean` | Whether the request succeeded or failed. <br> **Example**: `true`                                                     |
+| `success` | `boolean` | Whether an open session exists <br> **Example**: `true`                                                               |
 | `message` | `string`  | If the request was not successful, this contains the error message. <br> **Example**: `Unknown fatal error occurred.` |
+
+## Remarks
+
+* This endpoint returns `false` for the `success` field when no open session exists.  
+  That behaviour is different from other endpoints which use this field to indicate an error state.
 
 ## Syntax
 

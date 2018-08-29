@@ -39,6 +39,13 @@ Sets data in the data store.
 /data-store/set/?game_id=xxxxx&key=mykey&data=newdata&username=myusername&user_token=mytoken
 ```
 
+## Errors
+
+| Affected parameter | Description                    | Error `message`                                                          |
+| ------------------ | ------------------------------ | ------------------------------------------------------------------------ |
+| `key`              | `key` parameter not passed in  | You must enter the key for the item you would like to retrieve data for. |
+| `data`             | `data` parameter not passed in | You must enter data with the request.                                    |
+
 ## Version history
 
 | Version | Description          |

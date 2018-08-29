@@ -44,6 +44,16 @@ times.
 /trophies/?game_id=xxxxx&username=myusername&user_token=mytoken&trophy_id=1047
 ```
 
+## Errors
+
+| Affected parameter | Description                                                                    | Error `message`                                   |
+| ------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------- |
+| `trophy_id`        | One of the passed in `trophy_id`s is invalid (`<= 0` or not a valid `integer`) | The trophy returned does not belong to this game. |
+| `trophy_id`        | One of the passed in `trophy_id`s does not belong to the passed in `game_id`   | The trophy returned does not belong to this game. |
+
+_Notes:_
+* _The error message for the first error listed is incorrect._
+
 ## Version history
 
 | Version | Description          |

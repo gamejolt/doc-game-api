@@ -36,6 +36,13 @@ Removes data from the data store.
 /data-store/remove/?game_id=xxxxx&key=keytoremove&username=myusername&user_token=mytoken
 ```
 
+## Errors
+
+| Affected parameter | Description                         | Error `message`                                                          |
+| ------------------ | ----------------------------------- | ------------------------------------------------------------------------ |
+| `key`              | `key` parameter not passed in       | You must enter the key for the item you would like to retrieve data for. |
+| `key`              | No data store item exists for `key` | There is no item with the key passed in: &lt;key>                        |
+
 ## Version history
 
 | Version | Description          |

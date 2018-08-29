@@ -48,6 +48,13 @@ Returns a user's data.
 /users/?game_id=xxxxx&user_id=17741
 ```
 
+## Errors
+
+| Affected parameter | Description                                                        | Error `message`                          |
+| ------------------ | ------------------------------------------------------------------ | ---------------------------------------- |
+| `username` / `user_id` | No `username` / `user_id` passed in                            | You must enter in a user ID or username. |
+| `username` / `user_id` | None of the passed in `username`s / `user_id`s are valid users | No such user could be found.             |
+
 ## Version history
 
 | Version | Description                                                                                                                                |

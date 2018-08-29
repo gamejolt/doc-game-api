@@ -29,6 +29,12 @@ Closes the active session.
 /sessions/close/?game_id=xxxxx&username=myusername&user_token=mytoken
 ```
 
+## Errors
+
+| Affected parameter | Description                                                                                | Error `message`                                          |
+| ------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| _`-none-`_         | No open session exists, [open](https://gamejolt.com/game-api/doc/sessions/open) a new one! | Could not find an open session. You must open a new one. |
+
 ## Version history
 
 | Version | Description          |

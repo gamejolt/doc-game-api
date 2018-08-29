@@ -36,6 +36,12 @@ Returns the rank of a particular score on a score table.
 /scores/get-rank/?game_id=xxxxx&sort=20&table_id=12345
 ```
 
+## Errors
+
+| Affected parameter                  | Description                                                                 | Error `message`                                      |
+| ----------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------- |
+| `sort` / `table_id`                 | Game does not have a score for the `sort` / `table_id` parameters passed in | Could not get a rank for the parameters you entered. |
+
 ## Version history
 
 | Version | Description          |

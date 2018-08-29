@@ -52,6 +52,19 @@ Updates data in the data store.
 /data-store/update/?game_id=xxxxx&key=mykey&operation=divide&value=2&username=myusername&user_token=mytoken
 ```
 
+## Errors
+
+| Affected parameter    | Description                                                | Error `message`                                                                                |
+| --------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `key`                 | `key` parameter not passed in                              | You must enter the key for the item you would like to retrieve data for.                       |
+| `key`                 | No data store item exists for `key`                        | There is no item with the key passed in: &lt;key>                                              |
+| `operation`           | `operation` parameter not passed in                        | You must enter an operation with the request.                                                  |
+| `operation`           | Invalid operation passed in                                | Operation must be add, subtract, multiply, divide, append or prepend.                          |
+| `value`               | `value` parameter not passed in                            | You must enter an value with the request.                                                      |
+| `operation`           | Mathmatical operation with non-numerical data store item   | Mathematical operations require the pre-existing data stored to also be numeric.               |
+| `value` / `operation` | Mathmatical operation with non-numerical `value` parameter | Value must be numeric if operation is mathematical.                                            |
+| `value`               | Division by zero (0)                                       | GAME JOLT STOP: 0x00000019 (0x00000000, 0xC00E0FF0, 0xFFFFEFD4, 0xC0000000) UNIVERSAL_COLLAPSE |
+
 ## Version history
 
 | Version | Description          |

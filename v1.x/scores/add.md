@@ -47,6 +47,20 @@ Adds a score for a user or guest.
 /scores/add/?game_id=xxxxx&guest=newguestaccount&score=234 Jumps&sort=234
 ```
 
+## Errors
+
+| Affected parameter                  | Description                                                       | Error `message`                                                     |
+| ----------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------|
+| `guest` / `table_id`                | Tried to add guest score to table that doesn't allow guest scores | Guests are not allowed to enter scores for this game.               |
+| `username` / `user_token` / `guest` | Have to either use user info or the `guest` parameter             | You must pass in a user/guest for this score.                       |
+| `score`                             | `score` parameter not passed in                                   | You must enter a score.                                             |
+| `sort`                              | `sort` parameter not passed in or not numeric                     | You must enter a sort value for this score, and it must be numeric. |
+| _`-none-`_                          | Failed to add score, usually not a user error                     | Unknown error has occured                                           |
+
+_Notes:_
+* _Even though the error suggests otherwise, the "are guest scores allowed" setting can be adjusted per score table, not per game._
+* _The generic error while adding scores is NOT the same as the global "something went wrong" error message._
+
 ## Version history
 
 | Version | Description          |

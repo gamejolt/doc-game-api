@@ -30,6 +30,13 @@ Remove a previously achieved trophy for a particular user.
 /trophies/remove-achieved/?game_id=xxxxx&username=myusername&user_token=mytoken&trophy_id=1047
 ```
 
+## Errors
+
+| Affected parameter | Description                                                                            | Error `message`                                     |
+| ------------------ | -------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| `trophy_id`        | The passed in `trophy_id` does not belong to the passed in `game_id` or does not exist | Incorrect trophy ID.                                |
+| `trophy_id`        | The user has not achieved this trophy                                                  | The user does not have this trophy.                 |
+
 ## Version history
 
 | Version | Description          |

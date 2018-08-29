@@ -20,6 +20,7 @@
 
 - [**/users/**](https://gamejolt.com/game-api/doc/users/fetch): The `developer_*` fields are sent for all users now, not just devs.
 - [**/data-store/get-keys**](https://gamejolt.com/game-api/doc/data-store/get-keys):<br>Added `pattern` parameter.<br>Limited request to return up to 100 items.
-- [**/scores/**](https://gamejolt.com/game-api/doc/scores):<br>Added `stored_timestamp` to the
-  [fetch](https://gamejolt.com/game-api/doc/scores/fetch) request.<br>Added `better_than` and
-  `worse_than` parameters to the [fetch](https://gamejolt.com/game-api/doc/scores/fetch) request
+- [**/scores/**](https://gamejolt.com/game-api/doc/scores):<br>
+	Added `stored_timestamp` to the [fetch](https://gamejolt.com/game-api/doc/scores/fetch) request.<br>
+	Added `better_than` and `worse_than` parameters to the [fetch](https://gamejolt.com/game-api/doc/scores/fetch) request<br>
+	Added `guest` parameter to the [fetch](https://gamejolt.com/game-api/doc/scores/fetch) request

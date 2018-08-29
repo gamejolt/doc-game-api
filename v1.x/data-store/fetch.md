@@ -37,6 +37,13 @@ Returns data from the data store.
 /data-store/?game_id=xxxxx&key=myuserkey&username=myusername&user_token=mytoken
 ```
 
+## Errors
+
+| Affected parameter | Description                         | Error `message`                                                          |
+| ------------------ | ----------------------------------- | ------------------------------------------------------------------------ |
+| `key`              | `key` parameter not passed in       | You must enter the key for the item you would like to retrieve data for. |
+| `key`              | No data store item exists for `key` | No item with that key could be found.                                    |
+
 ## Version history
 
 | Version | Description          |

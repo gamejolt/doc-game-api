@@ -185,5 +185,9 @@
 	{
 		"title": "Batch Calls",
 		"url": "/batch"
+	},
+	{
+		"title": "Errors",
+		"url": "/errors"
 	}
 ]
