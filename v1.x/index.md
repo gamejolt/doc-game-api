@@ -10,6 +10,10 @@ If you do decide to write your own code for calling the Game API directly, then 
 Calls to the system are done over HTTP or HTTPS, so nothing special is needed, and you can test the
 service using a normal web browser.
 
+## Current version
+
+The current version of the API is `1.2`.
+
 ## Namespaces
 
 These are the features currently supported by the API:
