@@ -7,7 +7,7 @@ you'd like.
 
 This function can be added to any API requests.
 
-If you don't use the `format` parameter for a request URL, `keypair` will be used as the default
+If you don't use the `format` parameter for a request URL, `json` will be used as the default
 format.
 
 | Name     | Required? | Type     | Description                                 |
