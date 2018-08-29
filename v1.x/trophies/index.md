@@ -19,11 +19,11 @@ visible until a gamer has achieved it.
 
 ## Requests
 
-| Name                                                                              | Description                               |
-| --------------------------------------------------------------------------------- | ----------------------------------------- |
-| [**Fetch**](https://gamejolt.com/game-api/doc/trophies/fetch)                     | Fetches trophies with various attributes. |
-| [**Set Achieved**](https://gamejolt.com/game-api/doc/trophies/set-achieved)       | Sets whether a user achieved a trophy.    |
-| [**Remove Achieved**](https://gamejolt.com/game-api/doc/trophies/remove-achieved) | Removes an achieved trophy.               |
+| Name                                                                              | Description                                         |
+| --------------------------------------------------------------------------------- | --------------------------------------------------- |
+| [**Fetch**](https://gamejolt.com/game-api/doc/trophies/fetch)                     | Fetches trophies with various attributes.           |
+| [**Add Achieved**](https://gamejolt.com/game-api/doc/trophies/add-achieved)       | Add a trophy to a user's list of achieved trophies. |
+| [**Remove Achieved**](https://gamejolt.com/game-api/doc/trophies/remove-achieved) | Removes an achieved trophy.                         |
 
 ## Remarks
 

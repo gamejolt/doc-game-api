@@ -1,4 +1,4 @@
-# Trophies - Set Achieved
+# Trophies - Add Achieved
 
 Sets a trophy as achieved for a particular user.
 

@@ -118,8 +118,8 @@
 				"url": "/trophies/fetch"
 			},
 			{
-				"title": "/set-achieved",
-				"url": "/trophies/set-achieved"
+				"title": "/add-achieved",
+				"url": "/trophies/add-achieved"
 			},
 			{
 				"title": "/remove-achieved",
