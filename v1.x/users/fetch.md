@@ -33,7 +33,7 @@ Returns a user's data.
 | `status`                   | `string`       | `Active` if the user is still a member of the site. `Banned` if they've been banned. <br> **Example**: `Active`                   |
 | `developer_name`           | `string`       | The user's display name.<br> **Example**: `nilllzz`                                                                               |
 | `developer_website`        | `string (url)` | The user's website (or empty string if not specified) <br> **Example**: `http://www.nilllzz.tumblr.com/`                          |
-| `developer_description`    | `string`       | The user's profile description. HTML tags and line breaks will be removed. <br> **Example**: `I am developing great games!`       |
+| `developer_description`    | `string`       | The user's profile markdown description. <br> **Example**: `I am developing great games!`                                         |
 
 ## Remarks
 
