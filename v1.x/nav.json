@@ -1,10 +1,13 @@
-[{
+[
+	{
 		"title": "Overview",
 		"url": "",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Libraries/Plugins",
 				"url": "/libraries"
-			}, {
+			},
+			{
 				"title": "URL Construction",
 				"url": "/construction"
 			},
@@ -17,7 +20,8 @@
 	{
 		"title": "Data Formats",
 		"url": "/formats",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/formats"
 			},
@@ -42,7 +46,8 @@
 	{
 		"title": "Users",
 		"url": "/users",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/users"
 			},
@@ -59,7 +64,8 @@
 	{
 		"title": "Sessions",
 		"url": "/sessions",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/sessions"
 			},
@@ -84,7 +90,8 @@
 	{
 		"title": "Scores",
 		"url": "/scores",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/scores"
 			},
@@ -109,7 +116,8 @@
 	{
 		"title": "Trophies",
 		"url": "/trophies",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/trophies"
 			},
@@ -130,7 +138,8 @@
 	{
 		"title": "Data Storage",
 		"url": "/data-store",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/data-store"
 			},
@@ -159,7 +168,8 @@
 	{
 		"title": "Friends",
 		"url": "/friends",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/friends"
 			},
@@ -172,7 +182,8 @@
 	{
 		"title": "Time",
 		"url": "/time",
-		"nav": [{
+		"nav": [
+			{
 				"title": "Overview",
 				"url": "/time"
 			},
@@ -189,5 +200,9 @@
 	{
 		"title": "Errors",
 		"url": "/errors"
+	},
+	{
+		"title": "Mod Support",
+		"url": "/mods"
 	}
 ]
