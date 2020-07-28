@@ -1,6 +1,6 @@
 # Mod Support
 
-Our friends at **mod.io** have built a [cross-platform modding API](https://mod.io/), which makes it easy to add in-game mod support, and establish a modding community that can grow your games success with new content for your players.
+Our friends at **mod.io** have built a cross-platform modding API, which makes it easy to [add mod support to your game on PC, console and mobile](https://mod.io/), and establish a modding community that can grow your games success with new content for your players.
 
 [![mod.io](./modio.png)](https://mod.io/)
 
