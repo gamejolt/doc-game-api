@@ -27,8 +27,8 @@ Sets data in the data store.
 
 ## Remarks
 
-* If you pass in the user information, this item will be removed from a user's data store. If you
-	leave the user information empty, it will be removed from the game's global data store.
+* If you pass in the user information, this item will be set in a user's data store. If you
+	leave the user information empty, it will be set in the game's global data store.
 * You can create new data store items by passing in a `key` that doesn't yet exist in the data
 	store.
 
