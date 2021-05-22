@@ -27,7 +27,7 @@ make sure the user's credentials (username and token) are valid.
 ## Syntax
 
 ```
-/users/?game_id=xxxxx&username=test&user_token=12a45z
+/users/auth?game_id=xxxxx&username=test&user_token=12a45z
 ```
 
 ## Version history
