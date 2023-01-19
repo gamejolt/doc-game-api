@@ -28,14 +28,3 @@ Members of the Game Jolt community have already written libraries and plugins fo
 * [RPG Maker XP](http://gamejolt.com/games/gamejolt-achievement-api-for-rpg-maker-xp/56053)
 * [Ruby](http://gamejolt.com/community/forums/topics/gamejoltapi-for-ruby/9401)
 * [Visual Basic](http://gamejolt.com/community/forums/topics/visual-basic-game-jolt-api/2874/)
-
-Have you written a new Game API plugin or library? Be sure to let us know in the
-[Game API forum](https://gamejolt.com/f/gj-game-api).
-
-Don't see your platform? Check the [Game API forum](https://gamejolt.com/f/gj-game-api). There might
-be something new there that hasn't made it's way here yet.
-
-Need Game API help? The [Game API forum](https://gamejolt.com/f/gj-game-api) should be your first
-stop.
-
-Yeah, basically just go to the forum for everything.
